@@ -1,12 +1,18 @@
 import * as React from "react"
+import '../styles/styles.scss'
+import Hero from '../components/hero'
+import About from '../components/about'
+import Projects from '../components/projects'
+import Contact from '../components/contact'
 
 const IndexPage = () => {
   return (
-    <main>
+    <main className = "main">
       <title>Justin Caovan | Front End Developer</title>
-      <p>Hi, my name is</p>
-      <h1>Justin Caovan</h1>
-      <p>Front End Developer</p>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
     </main>
   )
 }

@@ -1,0 +1,9 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+.hero {
+  font: 100% $font-stack;
+  margin: auto;
+  padding: auto;
+  height: 100vh
+}
