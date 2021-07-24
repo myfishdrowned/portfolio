@@ -4,10 +4,9 @@ import { hero } from './hero.module.scss'
 const Hero = () => {
     return (
         <div className={ hero }>
-            <p>Hi my name is</p>
-            <h1>Justin Caovan</h1>
-            <p>Full Stack Developer</p>
-
+            <h1>JUSTIN CAOVAN</h1>
+            <p>Front End Developer</p>
+            <button>Click Me</button>
         </div>
     )
 }

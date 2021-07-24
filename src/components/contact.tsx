@@ -1,4 +1,6 @@
 import React from 'react'
+import { contact } from './contact.module.scss'
+
 
 const Contact = () => {
     return (
