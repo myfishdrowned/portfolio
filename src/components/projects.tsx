@@ -1,12 +1,10 @@
 import React from 'react'
-import { projects } from './about.module.scss'
-
 
 const Projects = () => {
     return (
-        <main>
-
-        </main>
+        <div className='bg-bg-blue h-screen w-full font-thin'>
+            <h2 className='text-white text-5xl font-display'>Projects</h2>
+        </div>
     )
 }
 

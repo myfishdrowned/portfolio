@@ -1,12 +1,11 @@
 import React from 'react'
-import { hero } from './hero.module.scss'
 
 const Hero = () => {
     return (
-        <div className={ hero }>
-            <h1>JUSTIN CAOVAN</h1>
+        <div className="font-display flex flex-col justify-center items-center w-full h-screen m-auto 
+        bg-bg-blue text-white">
+            <h1 className=''>JUSTIN CAOVAN</h1>
             <p>Front End Developer</p>
-            <button>Click Me</button>
         </div>
     )
 }
