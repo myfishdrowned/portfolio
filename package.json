@@ -17,7 +17,7 @@
   "dependencies": {
     "@fontsource/montserrat": "^4.5.0",
     "@fontsource/raleway": "^4.5.0",
-    "aos": "^2.3.4",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.9.1",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
