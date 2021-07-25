@@ -1,10 +1,13 @@
 import React from 'react'
+import { motion, useViewportScroll, useTransform } from "framer-motion"
 
 const About = () => {
+    const { scrollYProgress } = useViewportScroll()
+    const scale = useTransform(scrollYProgress, [0, 0], [3, 3]);
+    
     return (
         <div className ="flex flex-col items-center bg-bg-blue text-white h-screen w-full">
-
-            <div className='w-1/2'>
+            <div  className='w-1/2'>
                 <h1 className='font-display text-4xl'>About Me</h1>
                 <p className='font-body'>I'm a self-taught Front-end developer based in Phoenix, Arizona 
                 I'm a self-taught Front-end developer based in Phoenix, Arizona
