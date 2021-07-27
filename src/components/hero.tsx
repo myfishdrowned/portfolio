@@ -4,7 +4,7 @@ import { motion, useViewportScroll, useTransform } from "framer-motion"
 const Hero = () => {
     return (
         <div className="font-display flex flex-col justify-center items-center w-full h-screen m-auto 
-        bg-bg-blue text-white tracking-wider text-center">
+        bg-gray-600 text-white tracking-wider text-center py-16">
             <motion.div 
                 initial ={{scale: 0}}
                 animate={{ scale: 1.5 }}
