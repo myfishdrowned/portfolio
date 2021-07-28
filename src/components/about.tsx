@@ -5,10 +5,10 @@ import { useInView } from 'react-intersection-observer'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const About = () => {
+    const animation = useAnimation()
     const {ref, inView} = useInView({
         threshold: 0.2
     })
-    const animation = useAnimation()
 
     useEffect(() => {
         if (inView) {
@@ -30,15 +30,15 @@ const About = () => {
 
     return (
         <div ref={ref} className='bg-gradient-to-t from-gray-700 via-gray-600 to-gray-600 text-white h-full w-full pt-12 pb-28 overflow-hidden'>
-            <motion.div className='flex mx-20 flex-col' animate={animation}>
+            <motion.div className='flex mx-20 my-12 justify-between' animate={animation}>
+                <div className='flex flex-col space-y-8 w-1/2 justify-between'>
                     <h1 className='font-display text-4xl font-thin'>About Me</h1>
-                    <div className='flex items-center justify-around'>
-                        <p className='w-1/2 font-body tracking-wide leading-loose'>I'm a self-taught Front-end developer based in Phoenix, Arizona</p>
-                        <StaticImage className='w-96' src='../images/profile.svg' alt='profile'/>
-                    </div>
+                    <p className='font-body tracking-wide leading-loose'>
+                        I'm a self-taught Front-end developer based in Phoenix, Arizona.
+                        Like the process of implementing ideas and bringing them to life on screen. 
+                        </p>
 
-                <div className='flex flex-col space-y-8 w-2/5 justify-between'>
-                    <h1 className='font-display text-4xl font-thin'>Skills and Languages</h1>
+                    <h1 className='font-display text-4xl font-thin pt-12'>Skills and Languages</h1>
                     <div className='w-max rounded-xl'>
                         <h2 className='font-display text-xl font-thin'>Technologies</h2>
                         <ul className='flex space-x-8 font-body 
@@ -56,16 +56,18 @@ const About = () => {
                         <h2 className='font-display text-xl font-thin'>Tools</h2>
                         <ul className='flex space-x-8 font-body 
                          px-8 py-4 shadow-2xl rounded-xl'>
-                            <li className='icon'>{git}Git</li>
-                            <li className='icon'>{vscode}VS Code</li>
-                            <li className='icon'>{heroku}Heroku</li>
-                            <li className='icon'>{netlify}Netlify</li>
                             <li className='icon'>{webpack}Webpack</li>
                             <li className='icon'>{graphql}GraphQL</li>
+                            <li className='icon'>{heroku}Heroku</li>
+                            <li className='icon'>{netlify}Netlify</li>
+                            <li className='icon'>{git}Git</li>
                             <li className='icon'>{npm}npm</li>
+                            <li className='icon'>{vscode}VS Code</li>
                         </ul>
                     </div>
                 </div>
+
+                <StaticImage className='w-1/3' src='../images/profile.svg' alt='profile'/>
 
             </motion.div>
         </div>

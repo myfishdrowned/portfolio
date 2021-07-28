@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className="font-display flex flex-col justify-center items-center 
         w-full h-screen m-auto text-white tracking-wider text-center
-        bg-gradient-to-br from-gray-700 via-gray-600 to-gray-500">
+        bg-gradient-to-b from-gray-700 via-gray-600 to-gray-500">
             <motion.div 
                 initial ={{scale: 0, opacity: 0}}
                 animate={{ scale: 1.5, opacity: 1}}
