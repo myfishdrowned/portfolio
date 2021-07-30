@@ -29,7 +29,7 @@ const About = () => {
     }, [inView])
 
     return (
-        <div ref={ref} className='bg-gradient-to-t from-gray-700 via-gray-600 to-gray-600 text-white h-full w-full pt-12 pb-28 overflow-hidden'>
+        <div ref={ref} className='h-full w-full pt-12 pb-28 overflow-hidden'>
             <motion.div className='flex mx-20 my-12 justify-between' animate={animation}>
                 <div className='flex flex-col space-y-8 w-1/2 justify-between'>
                     <h1 className='font-display text-4xl font-thin'>About Me</h1>
@@ -67,7 +67,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <StaticImage className='w-1/3' src='../images/profile.svg' alt='profile'/>
+                {/* <StaticImage className='w-1/3' src='../images/profile.svg' alt='profile'/> */}
 
             </motion.div>
         </div>

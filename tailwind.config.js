@@ -6,17 +6,9 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // colors: {
-    //   'blueGray': colors.blueGray,
-    //   'coolGray': colors.coolGray,
-    //   'warmGray': colors.warmGray,
-    //   'sky': colors.sky,
-    //   'teal': colors.teal,
-    //   'cyan': colors.cyan,
-    //   'rose': colors.rose,
-    // },
+
     fontFamily: {
-      'display': ['Montserrat'],
+      'display': ['Inter'],
       'body': ['Raleway'],
     },
     extend: {

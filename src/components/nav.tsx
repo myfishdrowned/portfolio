@@ -1,16 +1,18 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import {motion} from 'framer-motion'
 
 const Nav = () => {
     return (
-        <div className=''>
-            <ul className='flex m-auto justify-end absolute inset-x-0 top-0 text-white font-thin w-full h-16'>
-                <li><StaticImage className='w-14 border-2' src='../images/profile.svg' alt='Logo'/>Logo</li>
+        <motion.div
+            initial={{y: '-50vh'}}
+            animate={{y: 0}}
+            transition={{ duration: 2.25}}>
+            <ul className='absolute top-0 right-0 flex font-display mt-8 mr-10 h-16 justify-end space-x-12'>
                 <li>About</li>
                 <li>Projects</li>
                 <li>Contact</li>
             </ul>
-        </div>
+        </motion.div>
     )
 }
 
