@@ -8,13 +8,16 @@ module.exports = {
   theme: {
 
     fontFamily: {
-      'display': ['Inter'],
-      'body': ['Raleway'],
+      'display': ['GT Walsheim Pro'],
+      'body': ['TT Hoves'],
     },
     extend: {
       colors: {
         'bg-blue': '#4C5464',
-      }
+      },
+      backgroundImage: theme => ({
+        'hero': "url('/images/hero.svg')",
+      })
     },
   },
   variants: {
