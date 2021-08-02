@@ -1,9 +1,9 @@
 import React from 'react'
-import { motion, useViewportScroll, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Hero = () => {
     const container = {
-        hidden: { x: '-100vw', opacity : 0},
+        hidden: { x: '-50vw', opacity : 0},
         visible: { 
             x: 0, 
             opacity: 1,
@@ -20,11 +20,10 @@ const Hero = () => {
                 animate="visible"
                 className='text-8xl'
             >JUSTIN CAOVAN
-                {/* <h1 className='text-8xl'>JUSTIN CAOVAN</h1> */}
             </motion.h1>
             <motion.p 
-                initial={{ x: '-100vw', opacity: 0}}
-                animate={{x: 0, opacity: 1, transition: {type:'spring', duration: 2.5}}}
+                initial={{ x: '-50vw', opacity: 0}}
+                animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 1}}}
                 className='text-2xl'>
                 FRONT END DEVELOPER</motion.p>
         </div>

@@ -15,9 +15,6 @@ module.exports = {
       colors: {
         'bg-blue': '#4C5464',
       },
-      backgroundImage: theme => ({
-        'hero': "url('/images/hero.svg')",
-      })
     },
   },
   variants: {

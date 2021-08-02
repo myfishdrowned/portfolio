@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import {javascript, html, css, react, redux, gatsby, tailwind, webpack, vscode, graphql, git, npm, heroku, netlify} from '../images/icons'
-import { motion, useAnimation, useViewportScroll, useTransform } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const About = () => {
     const animation = useAnimation()
@@ -15,7 +14,9 @@ const About = () => {
             animation.start({
                 x: 0,
                 transition: {
-                    type: 'spring', duration: 2
+                    type: 'spring',
+                    duration: 2,
+                    delayChildren: 1
                 }
             })
         }
@@ -31,8 +32,8 @@ const About = () => {
     return (
         <div ref={ref} className='h-full w-full pt-12 pb-28 overflow-hidden'>
             <motion.div className='flex mx-20 my-12 justify-between' animate={animation}>
-                <div className='flex flex-col space-y-8 w-1/2 justify-between'>
-                    <h1 className='font-display text-4xl font-thin'>About Me</h1>
+                <motion.div className='flex flex-col space-y-8 w-1/2 justify-between'>
+                    <motion.h1 className='font-display text-4xl font-thin'>About Me</motion.h1>
                     <p className='font-body tracking-wide leading-loose'>
                         I'm a self-taught Front-end developer based in Phoenix, Arizona.
                         Like the process of implementing ideas and bringing them to life on screen. 
@@ -65,9 +66,7 @@ const About = () => {
                             <li className='icon'>{vscode}VS Code</li>
                         </ul>
                     </div>
-                </div>
-
-                {/* <StaticImage className='w-1/3' src='../images/profile.svg' alt='profile'/> */}
+                </motion.div>
 
             </motion.div>
         </div>
