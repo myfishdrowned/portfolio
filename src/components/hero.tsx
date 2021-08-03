@@ -13,7 +13,7 @@ const Hero = () => {
 
     return (
         <div className='font-display w-3/4 h-screen flex flex-col 
-        space-y-4 ml-24 justify-center bg-hero'>
+        space-y-4 ml-24 justify-center'>
             <motion.h1 
                 variants={container}
                 initial="hidden"

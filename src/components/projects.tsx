@@ -1,11 +1,23 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
 const Projects = () => {
     return (
-        <div className='h-full w-full font-thin py-20'>
-            <h2 className='mx-20 text-5xl font-display'>Projects</h2>
-    
+        <div className='h-full w-full font-display mx-20 py-20'>
+            <h2 className='text-5xl'>Projects</h2>
+            <ProjectCard 
+                name= {'Bloom'}
+                img = { '' }
+                github = { 'https://github.com/jtcaovan/shopping-cart' }
+                liveDemo = { 'bloom-shopping-cart.herokuapp.com/' }
+            />
+            <ProjectCard 
+                name = {'Weather App'}
+                img = { '' }
+                github = {'https://github.com/jtcaovan/WeatherApp'}
+                liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
+            /> 
         </div>
     )
 }

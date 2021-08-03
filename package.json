@@ -15,9 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.0",
-    "@fontsource/montserrat": "^4.5.0",
-    "@fontsource/raleway": "^4.5.0",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.9.1",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",
