@@ -30,7 +30,7 @@ const About = () => {
     }, [inView])
 
     return (
-        <div ref={ref} className='h-full w-full pt-12 pb-28 overflow-hidden'>
+        <div ref={ref} className='h-full w-full bg-tan pt-12 pb-28 overflow-hidden'>
             <motion.div className='flex mx-20 my-12 justify-between' animate={animation}>
                 <motion.div className='flex flex-col space-y-8 w-1/2 justify-between'>
                     <motion.h1 className='font-display text-4xl font-thin'>About Me</motion.h1>
