@@ -9,8 +9,8 @@ const Projects = () => {
             <ProjectCard 
                 name= {'Bloom'}
                 img = { '' }
+                liveDemo = { 'https://bloom-shopping-cart.herokuapp.com/' }
                 github = { 'https://github.com/jtcaovan/shopping-cart' }
-                liveDemo = { 'bloom-shopping-cart.herokuapp.com/' }
             />
             <ProjectCard 
                 name = {'Weather App'}
