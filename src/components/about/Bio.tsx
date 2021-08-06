@@ -44,7 +44,11 @@ function Bio() {
                 <motion.p variants={list} className='font-body text-lg tracking-wider leading-loose'>
                     Kinesiology and Sports Medicine graduate turned self-taught front-end developer?
                     self-taught web developer based in Phoenix, Arizona.
-                    Love the process of implementing ideas and bringing them to life on screen.
+                    Enjoy the process of implementing ideas and bringing them to life on screen.
+                    Passion for building intuitive, digital user experiences across websites/applications
+                    Eager to learn new design concepts, technologies and tools - add to my skillset
+                    Continuously looking to Create and captivate through intuitive, **** websites
+
                     Currently open to new opportunities?
                 </motion.p>
                 <motion.button variants={list} className='border-2 border-black w-max p-4'>View my Resume arrow </motion.button>
