@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import weather from '.../images/weatherApp.png'
+import weather from '../../images/weatherApp.png'
 
 const Projects = () => {
     return (
@@ -17,7 +17,7 @@ const Projects = () => {
             />
             <ProjectCard 
                 name = {'Weather App'}
-                img = { weather }
+                // img = { weather }
                 tags = { ['React', 'TailwindCSS', 'Rest API' ]}
                 github = {'https://github.com/jtcaovan/WeatherApp'}
                 liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}

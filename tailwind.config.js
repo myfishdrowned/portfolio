@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'bg-tan': '#F6F5F3',
+        'tan': '#F6F5F3',
       },
     },
   },
