@@ -7,14 +7,14 @@ import Contact from '../components/contact/Contact'
 
 const IndexPage = () => {
   return (
-    <>
+    <div>
       <title>Justin Caovan | Front End Developer</title>
       <Nav />
       <Hero />
       <About />
       <Projects />
       <Contact />
-    </>
+    </div>
   )
 }
 

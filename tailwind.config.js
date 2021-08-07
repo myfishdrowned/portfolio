@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       colors: {
         'tan': '#F6F5F3',
+        'beige': '#D4C9C9',
       },
     },
   },

@@ -6,7 +6,7 @@ function Bio() {
 
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.1
     })
 
     useEffect(() => {
@@ -20,21 +20,21 @@ function Bio() {
 
     const list = {
         visible: {
-            x: 0, opacity: 1,
+            x: 0,
             transition: {
-                delayChildren: .3,
-                staggerChildren: .3,
+                delayChildren: .2,
+                staggerChildren: .4,
                 type: 'spring',
                 duration: 2,
             }
         },
         hidden: {
-            x: '100vw', opacity: 0,
+            x: '50vw'
         }
     }
 
     return(
-        <div ref={ref} className='bg-tan border border-tan shadow-lg w-5/12 h-5/6 absolute top-0 right-0 p-12 mr-10 h-full'>
+        <div ref={ref} className='bg-beige border border-tan shadow-xl w-5/12 h-5/6 absolute top-0 right-0 p-12 mr-10 h-full'>
             <motion.div
             initial='hidden' 
             animate={animation} 
@@ -49,7 +49,7 @@ function Bio() {
                     Eager to learn new design concepts, technologies and tools - add to my skillset
                     Continuously looking to Create and captivate through intuitive, **** websites
 
-                    Currently open to new opportunities?
+                    Currently open to new opportunities? 
                 </motion.p>
                 <motion.button variants={list} className='border-2 border-black w-max p-4'>View my Resume arrow </motion.button>
             </motion.div> 

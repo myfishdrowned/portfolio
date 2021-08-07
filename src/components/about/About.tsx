@@ -1,8 +1,6 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Bio from './Bio'
 import Skills from './Skills'
-import { useInView } from 'react-intersection-observer'
-
 
 const About = () => {
 

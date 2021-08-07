@@ -17,7 +17,7 @@ const Projects = () => {
             />
             <ProjectCard 
                 name = {'Weather App'}
-                // img = { weather }
+                img = { weather }
                 tags = { ['React', 'TailwindCSS', 'Rest API' ]}
                 github = {'https://github.com/jtcaovan/WeatherApp'}
                 liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
