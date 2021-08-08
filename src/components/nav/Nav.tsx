@@ -34,19 +34,19 @@ const Nav = () => {
 
 
     return (
-        <div className=''>
+        <div className='relative'>
             <motion.img
                 variants={icon}
                 initial='hidden'
                 animate='visible'
-                className='h-16'
+                className='h-16 absolute top-0 left-0 m-6'
                 src={logo}></motion.img>
 
             <motion.ul 
                 variants={nav}
                 initial='hidden'
                 animate='visible'
-                className='flex font-display justify-end space-x-16'>
+                className='absolute top-0 right-0 my-12 mx-14 flex font-display justify-end space-x-16'>
                     <motion.li className='transform'
                     variants={nav}>About</motion.li>
 
