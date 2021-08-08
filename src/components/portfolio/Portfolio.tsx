@@ -5,7 +5,7 @@ import weather from '../../images/weatherApp.png'
 
 const Projects = () => {
     return (
-        <div className='h-screen w-full mx-20 py-20'>
+        <div className='bg-light-green h-full w-screen py-20'>
             <h2 className='font-display text-5xl'>Projects</h2>
             <ProjectCard 
                 name= {'Bloom'}

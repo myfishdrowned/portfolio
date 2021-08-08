@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         'tan': '#F6F5F3',
         'beige': '#D4C9C9',
+        'light-green': '#F1F6FA',
+        'teal': '#D8DDE1'
       },
       backgroundImage: theme => ({
         'hero': "url('/src/images/hero.jpg')",
