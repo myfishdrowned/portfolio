@@ -7,7 +7,7 @@ import Contact from '../components/contact/Contact'
 
 const IndexPage = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <title>Justin Caovan | Front End Developer</title>
       <Nav />
       <Hero />

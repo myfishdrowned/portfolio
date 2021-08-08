@@ -5,7 +5,7 @@ function ProjectCard(prop) {
         <li className='border rounded-lg bg-black text-white p-1'>{tag}</li>
     )
     return (
-        <div className='font-body w-full flex justify-between space-x-6 py-6'>
+        <div className='font-body w-full flex justify-between space-x-6 py-6 overflow-hidden'>
             <div className='w-1/3'>
                 <p className='text-3xl'>{prop.name}</p>
                 <p>{prop.description}</p>

@@ -15,7 +15,7 @@ const Hero = () => {
     }
 
     return (
-        <div className='relative font-display h-screen flex flex-col space-y-4 px-20 justify-center'>
+        <div className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20  justify-center'>
             <motion.h1 
                 variants={container}
                 initial="hidden"
