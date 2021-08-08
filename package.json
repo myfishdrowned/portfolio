@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@react-three/fiber": "^7.0.6",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.9.1",
     "gatsby-background-image": "^1.5.3",

@@ -16,6 +16,9 @@ module.exports = {
         'tan': '#F6F5F3',
         'beige': '#D4C9C9',
       },
+      backgroundImage: theme => ({
+        'hero': "url('/src/images/hero.jpg')",
+      })
     },
   },
   variants: {

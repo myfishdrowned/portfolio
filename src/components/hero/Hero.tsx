@@ -1,8 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react'
+import NET from 'vanta/dist/vanta.net.min'
 import { motion } from "framer-motion"
+import * as THREE from 'three'
 import linkedIn from "../../images/linkedin.svg"
 import github from "../../images/github.svg"
 import gmail from "../../images/gmail.svg"
+import hero from "../../images/hero.jpg"
 
 const Hero = () => {
     const container = {
@@ -14,8 +17,36 @@ const Hero = () => {
         }
     }
 
-    return (
-        <div className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20  justify-center'>
+    const MyComponent = () => {
+        const [vantaEffect, setVantaEffect] = useState(0)
+        const myRef = useRef(null)
+
+        useEffect(() => {
+          if (!vantaEffect) {
+            setVantaEffect(NET({
+                THREE: THREE,
+                el: myRef.current,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x0,
+                backgroundColor: 0xF1F6FA,
+                points: 8.00,
+                spacing: 17.00
+            }))
+          }
+          return () => {
+            if (vantaEffect) vantaEffect.destroy()
+          }
+        }, [vantaEffect])
+        return <div ref={myRef}>
+        <div className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20 justify-center'>
+            <div>
+            </div>
             <motion.h1 
                 variants={container}
                 initial="hidden"
@@ -34,7 +65,12 @@ const Hero = () => {
                 <img className='h-6 w-6' src={github}/>
                 <img className='h-6 w-6' src={gmail}/>
             </div>
-        </div>
+        </div>        
+    </div>
+      }
+      
+    return (
+        <MyComponent />
     )
 }
 

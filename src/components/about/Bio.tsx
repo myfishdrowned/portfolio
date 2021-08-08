@@ -34,7 +34,7 @@ function Bio() {
     }
 
     return(
-        <div ref={ref} className='bg-beige border border-tan shadow-xl w-5/12 h-5/6 absolute top-0 right-0 p-12 mr-10 h-full'>
+        <div ref={ref} className='  border border-tan shadow-xl w-5/12 h-5/6 absolute top-0 right-0 p-12 mr-10 h-full'>
             <motion.div
             initial='hidden' 
             animate={animation} 
