@@ -2,8 +2,8 @@ import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
 
-function Bio() {
 
+function Bio() {
     const animation = useAnimation()
     const {ref, inView} = useInView({
         threshold: 0.1

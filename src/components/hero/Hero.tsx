@@ -7,6 +7,7 @@ import github from "../../images/github.svg"
 import gmail from "../../images/gmail.svg"
 
 const Hero = () => {
+
     const container = {
         hidden: { x: '-50vw', opacity : 0},
         visible: { 
