@@ -5,16 +5,6 @@ import logo from '../../images/logo.png'
 
 
 const Nav = () => {
-    // const icon = {
-    //     hidden: {opacity: 0, scale: 0 },
-    //     visible: {
-    //         opacity: 1, scale: 1,
-    //         transition: {
-    //             delay: 1.75,
-    //             duration: 1
-    //         },
-    //     },
-    // }
     const nav = {
         hidden: { y: '-50vw', opacity: 0},
         visible: {
@@ -34,13 +24,7 @@ const Nav = () => {
 
 
     return (
-        <div className='relative z-10'>
-            {/* <motion.img
-                variants={icon}
-                initial='hidden'
-                animate='visible'
-                className='h-16 absolute top-0 left-0 m-6'
-                src={logo}></motion.img> */}
+        <div data-scroll-section className='relative z-10'>
 
             <motion.ul 
                 variants={nav}

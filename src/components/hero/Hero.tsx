@@ -44,7 +44,7 @@ const Hero = () => {
         }, [vantaEffect])
       
     return (
-        <div ref={myRef}>
+        <div data-scroll-section ref={myRef}>
             <div className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20 justify-center'>
                 <div>
                 </div>

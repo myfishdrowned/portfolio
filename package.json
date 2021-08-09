@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@ashthornton/asscroll": "^2.0.2",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.9.1",
     "gatsby-background-image": "^1.5.3",
