@@ -2,8 +2,6 @@ import React from "react";
 import {motion} from 'framer-motion'
 import logo from '../../images/logo.png'
 
-
-
 const Nav = () => {
     const nav = {
         hidden: { y: '-50vw', opacity: 0},
@@ -21,7 +19,6 @@ const Nav = () => {
             scale: 1.2
         }
     }
-
 
     return (
         <div data-scroll-section className='relative z-10'>

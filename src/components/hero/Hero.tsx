@@ -34,7 +34,7 @@ const Hero = () => {
             color: 0x0,
             backgroundColor: 0xF1F6FA,
             points: 15.00,
-            spacing: 18.00,
+            spacing: 17.00,
             showDots: false,
         }))
         }
@@ -45,22 +45,39 @@ const Hero = () => {
       
     return (
         <div data-scroll-section ref={myRef}>
-            <div className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20 justify-center'>
-                <div>
-                </div>
-                <motion.h1 
+            <div
+            className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20 justify-center'>
+                <motion.h1
+                    data-scroll
+                    data-scroll-direction='horizontal'
+                    data-scroll-speed='-3'
                     variants={container}
                     initial="hidden"
                     animate="visible"
                     className='text-8xl'
                 >JUSTIN CAOVAN
                 </motion.h1>
-                <motion.p 
+                <motion.div
+                    variants={container}
                     initial={{ x: '-50vw', opacity: 0}}
                     animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 1}}}
-                    className='text-2xl'>
-                    FRONT END DEVELOPER
-                </motion.p>
+                    className='flex -space-x-2 text-2xl'>
+                        <p 
+                        data-scroll
+                        data-scroll-position='top'
+                        data-scroll-direction='vertical'
+                        data-scroll-speed='-1'>FRONT &nbsp;</p>
+                        <p
+                             data-scroll
+                             data-scroll-position='top'
+                             data-scroll-direction='vertical'
+                             data-scroll-speed='1'>END &nbsp;</p>
+                        <p
+                             data-scroll
+                             data-scroll-position='top'
+                             data-scroll-direction='horizontal'
+                             data-scroll-speed='1'>DEVELOPER</p>
+                </motion.div>
                 <div className='absolute bottom-10 left-10 flex flex-col space-y-2'>
                     <img className='h-6 w-6' src={linkedIn}/>
                     <img className='h-6 w-6' src={github}/>
