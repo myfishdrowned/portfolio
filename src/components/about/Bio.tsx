@@ -46,13 +46,13 @@ function Bio() {
                     Self-taught front end web developer based in Phoenix, Arizona.
                     {/* Enjoy the process of implementing and bringing ideas to life on screen. */}
                     Passion for building intuitive, digital user experiences across websites/applications
-                    Eager to learn new design concepts, technologies and tools - add to my skillset
+                    {/* Eager to learn new design concepts, technologies and tools - add to my skillset */}
                     Continuously looking to create and captivate through intuitive, (something) websites
 
                     {/* Currently open to new opportunities?  */}
                 </p>
             </div>
-            <button className='bg-black text-light-green border-2 border-black w-max p-4'>View my Resume arrow </button>
+            <button className='bg-black text-light-green border-2 border-black w-max mt-6 p-4'>Get in touch</button>
         </div>
     )
 }
