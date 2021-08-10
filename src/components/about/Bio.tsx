@@ -34,18 +34,22 @@ function Bio() {
     // }
 
     return(
-        <div className='relative w-screen my-16 text-center h-full'>
-            <div className='m-auto w-1/2 max-w-2xl'>
-                <h1 className='-ml-24 mt-8 bg-black text-light-green rounded-full h-24 w-24 flex items-center justify-center'>About Me</h1>
-                <p  className='font-body text-lg tracking-wider leading-loose'>
+        <div className='my-16 text-center h-full'>
+            <div className='m-auto w-3/4 max-w-2xl'>
+                <h1 
+                    data-scroll
+                    data-scroll-direction='vertical'
+                    data-scroll-speed='-2'
+                className='-ml-28 mt-8 bg-black text-light-green rounded-full h-24 w-24 flex items-center justify-center'>About Me</h1>
+                <p className='font-body text-2xl tracking-wider leading-loose'>
                     {/* Kinesiology and Sports Medicine graduate turned self-taught front-end developer? */}
                     Self-taught front end web developer based in Phoenix, Arizona.
-                    Enjoy the process of implementing and bringing ideas to life on screen.
+                    {/* Enjoy the process of implementing and bringing ideas to life on screen. */}
                     Passion for building intuitive, digital user experiences across websites/applications
                     Eager to learn new design concepts, technologies and tools - add to my skillset
-                    Continuously looking to create and captivate through intuitive, (something descriptive) websites
+                    Continuously looking to create and captivate through intuitive, (something) websites
 
-                    Currently open to new opportunities? 
+                    {/* Currently open to new opportunities?  */}
                 </p>
             </div>
             <button className='bg-black text-light-green border-2 border-black w-max p-4'>View my Resume arrow </button>

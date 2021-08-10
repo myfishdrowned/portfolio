@@ -79,9 +79,9 @@ const Hero = () => {
                              data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
                 <div className='absolute bottom-10 right-10 flex flex-col space-y-2'>
-                    <img className='h-6 w-6' src={linkedIn}/>
-                    <img className='h-6 w-6' src={github}/>
-                    <img className='h-6 w-6' src={gmail}/>
+                    <img className='h-6 w-6 ' src={linkedIn}/>
+                    <img className='h-6 w-6 ' src={github}/>
+                    <img className='h-6 w-6 ' src={gmail}/>
                 </div>
             </div>        
         </div>    
