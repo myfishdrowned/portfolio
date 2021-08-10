@@ -46,7 +46,7 @@ const Hero = () => {
     return (
         <div data-scroll-section ref={myRef}>
             <div
-            className='relative font-display h-screen w-screen flex flex-col space-y-4 px-20 justify-center'>
+            className='relative font-display h-screen w-screen flex flex-col space-y-6 px-20 justify-center'>
                 <motion.h1
                     data-scroll
                     data-scroll-direction='horizontal'
@@ -65,8 +65,8 @@ const Hero = () => {
                         <p 
                         data-scroll
                         data-scroll-position='top'
-                        data-scroll-direction='vertical'
-                        data-scroll-speed='-1'>FRONT &nbsp;</p>
+                        data-scroll-direction='horizontal'
+                        data-scroll-speed='1'>FRONT &nbsp;</p>
                         <p
                              data-scroll
                              data-scroll-position='top'
@@ -75,10 +75,10 @@ const Hero = () => {
                         <p
                              data-scroll
                              data-scroll-position='top'
-                             data-scroll-direction='horizontal'
-                             data-scroll-speed='1'>DEVELOPER</p>
+                             data-scroll-direction='vertical'
+                             data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
-                <div className='absolute bottom-10 left-10 flex flex-col space-y-2'>
+                <div className='absolute bottom-10 right-10 flex flex-col space-y-2'>
                     <img className='h-6 w-6' src={linkedIn}/>
                     <img className='h-6 w-6' src={github}/>
                     <img className='h-6 w-6' src={gmail}/>
