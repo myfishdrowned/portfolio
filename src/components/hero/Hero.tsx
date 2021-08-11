@@ -31,8 +31,8 @@ const Hero = () => {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            color: 0x0,
-            backgroundColor: 0xF1F6FA,
+            color: 0xFFFFFF,
+            backgroundColor: 0x1E1E21,
             points: 15.00,
             spacing: 17.00,
             showDots: false,
@@ -46,7 +46,7 @@ const Hero = () => {
     return (
         <div data-scroll-section ref={myRef}>
             <div
-            className='relative font-display h-screen w-screen flex flex-col space-y-6 px-20 justify-center'>
+            className='relative text-light-green font-display h-screen w-screen flex flex-col space-y-6 px-20 justify-center'>
                 <motion.h1
                     data-scroll
                     data-scroll-direction='horizontal'
@@ -61,7 +61,7 @@ const Hero = () => {
                     variants={container}
                     initial={{ x: '-50vw', opacity: 0}}
                     animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 1}}}
-                    className='flex -space-x-2 text-2xl'>
+                    className='flex text-light-green -space-x-2 text-2xl'>
                         <p 
                         data-scroll
                         data-scroll-position='top'

@@ -34,8 +34,8 @@ function Skills() {
     // }
 
     return(
-        <div className='w-screen m-auto flex w-2/3 py-14 justify-between'>
-            <div className='w-1/2'>
+        <div className='m-auto flex w-2/3 py-14 justify-between'>
+            <div className='w-1/2 flex flex-col justify-between'>
                 <h1 className='font-display text-2xl font-thin'>Skills</h1>
             </div>
 

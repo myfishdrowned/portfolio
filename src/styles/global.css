@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+
     .icon {
         @apply transform hover:scale-125 duration-200
+    }
 
+    .appear {
+      opacity: 1;
     }
 }
 

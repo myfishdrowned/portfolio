@@ -34,13 +34,13 @@ function Bio() {
     // }
 
     return(
-        <div className='my-16 text-center h-full'>
+        <div className='mt-14 mb-20 text-center h-full'>
             <div className='m-auto w-3/4 max-w-2xl'>
                 <h1 
                     data-scroll
                     data-scroll-direction='vertical'
                     data-scroll-speed='-2'
-                className='-ml-28 mt-8 bg-black text-light-green rounded-full h-24 w-24 flex items-center justify-center'>About Me</h1>
+                className='-ml-28 mt-8 bg-black font-body text-light-green rounded-full h-24 w-24 flex items-center justify-center'>About Me</h1>
                 <p className='font-body text-2xl tracking-wider leading-loose'>
                     {/* Kinesiology and Sports Medicine graduate turned self-taught front-end developer? */}
                     Self-taught front end web developer based in Phoenix, Arizona.
@@ -52,7 +52,7 @@ function Bio() {
                     {/* Currently open to new opportunities?  */}
                 </p>
             </div>
-            <button className='bg-black text-light-green border-2 border-black w-max mt-6 p-4'>Get in touch</button>
+            <button className='bg-black font-body text-light-green border-2 border-black w-max mt-6 p-4'>Get In Touch</button>
         </div>
     )
 }

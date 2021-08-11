@@ -27,7 +27,7 @@ const Nav = () => {
                 variants={nav}
                 initial='hidden'
                 animate='visible'
-                className='absolute top-0 right-0 my-12 mx-14 flex font-display justify-end space-x-16'>
+                className='absolute top-0 right-0 my-12 mx-14 flex font-display justify-end space-x-16 text-light-green'>
                     <motion.li className='transform'
                     variants={nav}>About</motion.li>
 
