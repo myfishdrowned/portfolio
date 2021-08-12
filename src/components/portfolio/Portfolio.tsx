@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import weather from '../../images/screenShots/weatherApp.png'
+import weather from '../../images/screenShots/weather.png'
 import bloom from '../../images/screenShots/bloom.png'
 
 const Portfolio = () => {
