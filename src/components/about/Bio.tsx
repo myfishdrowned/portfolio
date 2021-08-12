@@ -34,7 +34,7 @@ function Bio() {
     // }
 
     return(
-        <div className='mt-14 mb-20 text-center h-full'>
+        <div className='mb-20 text-center h-full overflow-hidden'>
             <div className='m-auto w-3/4 max-w-2xl'>
                 <h1 
                     data-scroll
