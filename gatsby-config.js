@@ -15,5 +15,18 @@ module.exports = {
       path: `${__dirname}/src/images`,
     },
   },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Justin Caovan Portfolio`,
+      short_name: `Portfolio`,
+      start_url: `/`,
+      icon: `src/images/logo.png`,
+      background_color: `#f7f0eb`,
+      theme_color: `#a2466c`,
+      display: `standalone`,
+    },
+  },
+  `gatsby-plugin-offline`
 ],
 };

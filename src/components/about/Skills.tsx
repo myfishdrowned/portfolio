@@ -34,15 +34,15 @@ function Skills() {
     // }
 
     return(
-        <div className='m-auto flex w-2/3 py-14 justify-between'>
-            <div className='w-1/2 flex flex-col justify-between'>
-                <h1 className='font-display text-2xl font-thin'>Skills</h1>
+        <div className='m-auto flex w-2/3 py-20 my-4'>
+            <div className='w-1/4 flex flex-col justify-between'>
+                <h1 className='font-display text-3xl font-thin'>Skills</h1>
             </div>
 
-            <div className='flex flex-col w-1/2 space-y-16 divide-y divide-black text-center'>
-                <div>
-                    <h2 className='font-display text-lg font-thin'>Languages and Frameworks</h2>
-                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-10 justify-items-center font-body text-sm pt-12'>
+            <div className='flex w-3/4 space-x-8 divide-x divide-opacity-30 divide-graphite text-center justify-between'>
+                <div className='w-1/2'>
+                    <h2 className='font-display text-lg'>Languages and Frameworks</h2>
+                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-12 justify-items-center font-body text-sm pt-12'>
                         <li className='icon'>{html} HTML5</li>
                         <li className='icon'>{css} CSS3</li>
                         <li className='icon'>{javascript}JavaScript</li>
@@ -51,9 +51,9 @@ function Skills() {
                         <li className='icon'>{tailwind}Tailwind</li>
                     </ul>
                 </div>
-                <div>
-                    <h2 className='font-display text-lg font-thin pt-6'>Development Tools</h2>
-                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-10 font-body justify-items-center text-sm pt-12'>
+                <div className='w-1/2'>
+                    <h2 className='font-display text-lg'>Development Tools</h2>
+                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-12 font-body justify-items-center text-sm pt-12'>
                         <li className='icon'>{redux}Redux</li>
                         <li className='icon'>{webpack}Webpack</li>
                         <li className='icon'>{graphql}GraphQL</li>
