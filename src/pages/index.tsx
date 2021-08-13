@@ -24,7 +24,7 @@ const IndexPage = () => {
 });
 
   return (
-      <div data-scroll-container ref={scrollRef} className='bg-light-green overflow-hidden'>
+      <div data-scroll-container ref={scrollRef} className='h-full bg-light-green'>
         <title>Justin Caovan | Front End Developer</title>
           <Nav />
           <Hero />

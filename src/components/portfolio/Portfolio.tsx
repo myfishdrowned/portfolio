@@ -6,9 +6,9 @@ import bloom from '../../images/screenShots/bloom.png'
 
 const Portfolio = () => {
     return (
-        <div data-scroll-section  className='w-2/3 py-14 h-full m-auto flex'>
+        <div data-scroll-section className='w-2/3 py-14 h-full m-auto flex'>
             <h2
-            className='sticky top-0 w-1/3 h-full font-display text-2xl'>Featured Projects </h2>
+            className='w-1/3 h-full font-display text-2xl'>Featured Projects </h2>
             <div className='flex flex-col w-2/3 h-full text-center'>
                 <ProjectCard 
                     name= {'Bloom'}
