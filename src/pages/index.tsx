@@ -1,5 +1,4 @@
 import React, {useEffect, useRef} from "react"
-import ReactDOM from "react-dom";
 import Nav from '../components/nav/Nav'
 import Hero from '../components/hero/Hero'
 import About from '../components/about/About'
@@ -8,7 +7,7 @@ import Contact from '../components/contact/Contact'
 import LocomotiveScroll from 'locomotive-scroll';
 
 const IndexPage = () => {
-  const scrollRef = React.createRef();
+  const scrollRef = useRef()
 
   useEffect(() => {
     let locomotiveScroll = new LocomotiveScroll({
@@ -24,7 +23,7 @@ const IndexPage = () => {
 });
 
   return (
-      <div data-scroll-container ref={scrollRef} className='h-full bg-light-green'>
+      <div data-scroll-container ref={scrollRef} className='bg-light-green'>
         <title>Justin Caovan | Front End Developer</title>
           <Nav />
           <Hero />
