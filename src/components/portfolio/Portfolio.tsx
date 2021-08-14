@@ -19,7 +19,7 @@ const Portfolio = () => {
                         tags = { ['React', 'Redux', 'TailwindCSS'] }
                         liveDemo = { 'https://bloom-shopping-cart.herokuapp.com/' }
                         github = { 'https://github.com/jtcaovan/shopping-cart' }
-                        description = {'A simple, single-page indoor plant eCommerce web application with a focus on the front-end user interface. Users can add, modify, and remove items from their cart as well as filter products by category.'}
+                        description = {'A simple, single-page indoor plant eCommerce web application with a focus on the front-end user interface. Users can add and remove items from their cart, filter products by category, and '}
                     />
                 </div>
                 <div data-scroll data-scroll-direction='vertical' data-scroll-speed='4'>
