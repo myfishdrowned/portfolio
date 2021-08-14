@@ -34,7 +34,7 @@ function Skills() {
     // }
 
     return(
-        <div className='m-auto flex w-2/3 py-20 my-4'>
+        <div className='m-auto flex w-2/3 py-24 my-4'>
             <div className='w-1/4 flex flex-col justify-between'>
                 <h1 className='font-display text-3xl font-thin'>Skills</h1>
             </div>
@@ -42,7 +42,7 @@ function Skills() {
             <div className='flex w-3/4 space-x-8 divide-x divide-opacity-30 divide-graphite text-center justify-between'>
                 <div className='w-1/2'>
                     <h2 className='font-display text-lg'>Languages and Frameworks</h2>
-                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-12 justify-items-center font-body text-sm pt-12'>
+                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-14 justify-items-center font-body text-sm pt-14'>
                         <li className='icon'>{html} HTML5</li>
                         <li className='icon'>{css} CSS3</li>
                         <li className='icon'>{javascript}JavaScript</li>
@@ -53,7 +53,7 @@ function Skills() {
                 </div>
                 <div className='w-1/2'>
                     <h2 className='font-display text-lg'>Development Tools</h2>
-                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-12 font-body justify-items-center text-sm pt-12'>
+                    <ul className='grid grid-rows-2 grid-cols-3 gap-y-14 font-body justify-items-center text-sm pt-14'>
                         <li className='icon'>{redux}Redux</li>
                         <li className='icon'>{webpack}Webpack</li>
                         <li className='icon'>{graphql}GraphQL</li>

@@ -1,13 +1,12 @@
 import React from "react";
-import { StaticImage } from 'gatsby-plugin-image'
 
 function ProjectCard(prop) {
     let tags = prop.tags.map(tag => 
-        <li className='border rounded-lg bg-black text-white p-1'>{tag}</li>
+        <li className='p-1'>{tag}</li>
     )
     return (
         <div className='font-body h-full w-full'>
-                <p className='text-3xl'>{prop.name}</p>
+                <p className='font-display text-3xl'>{prop.name}</p>
                 <p>{prop.description}</p>
                 <ul className='flex space-x-2'>{tags}</ul>
                 <div className='flex space-x-4'>

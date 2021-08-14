@@ -12,18 +12,18 @@ const Portfolio = () => {
             className='w-1/3 h-full font-display text-2xl'>Featured Projects </h2>
 
             <div className='flex flex-col w-2/3 h-full text-center'>
-                <div data-scroll data-scroll-direction='vertical' data-scroll-speed='3'>
-                    <StaticImage src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
+                <div data-scroll data-scroll-direction='vertical' data-scroll-speed='4'>
+                    <StaticImage className='' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
                     <ProjectCard 
                         name= {'Bloom'}
                         tags = { ['React', 'Redux', 'TailwindCSS'] }
                         liveDemo = { 'https://bloom-shopping-cart.herokuapp.com/' }
                         github = { 'https://github.com/jtcaovan/shopping-cart' }
-                        description = {'An single-page ecommerce website'}
+                        description = {'A simple, single-page indoor plant eCommerce web application with a focus on the front-end user interface. Users can add and remove items from their cart, filter products by category, and '}
                     />
                 </div>
-                <div data-scroll data-scroll-direction='vertical' data-scroll-speed='3'>
-                    <StaticImage src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
+                <div data-scroll data-scroll-direction='vertical' data-scroll-speed='4'>
+                    <StaticImage className='' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                     <ProjectCard 
                         name = {'Weather App'}
                         tags = { ['React', 'TailwindCSS', 'Rest API' ]}
