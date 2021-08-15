@@ -9,11 +9,11 @@ import gmail from "../../images/gmail.svg"
 const Hero = () => {
 
     const container = {
-        hidden: { x: '-50vw', opacity : 0},
+        hidden: { y: '3vw', opacity : 0},
         visible: { 
-            x: 0, 
+            y: 0, 
             opacity: 1,
-            transition: {type: 'spring', duration: 2}
+            transition: {duration: 1}
         }
     }
     const [vantaEffect, setVantaEffect] = useState(0)

@@ -39,7 +39,7 @@ function Bio() {
                 <h1 
                     data-scroll
                     data-scroll-direction='vertical'
-                    data-scroll-speed='-2'
+                    data-scroll-speed='-3'
                 className='-ml-28 mt-8 bg-black font-body text-light-green rounded-full h-24 w-24 flex items-center justify-center'>About Me</h1>
                 <motion.p variants={list} className='about font-body text-2xl tracking-wider leading-loose'>
                     Self-taught front end web developer based in Phoenix, Arizona.
