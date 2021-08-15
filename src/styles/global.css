@@ -7,10 +7,6 @@
     .icon {
         @apply transform hover:scale-125 duration-200
     }
-
-    .appear {
-      opacity: 1;
-    }
 }
 
 html.has-scroll-smooth {

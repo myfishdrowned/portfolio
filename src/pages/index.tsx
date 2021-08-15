@@ -11,19 +11,18 @@ const IndexPage = () => {
 
   useEffect(() => {
     let locomotiveScroll = new LocomotiveScroll({
-      el: scrollRef.current,
+      el: document.querySelector(".smooth-scroll"),
       smooth: true,
     });
- 
-  locomotiveScroll.update();
-  window.scroll = locomotiveScroll;
-  return () => {
-    if (locomotiveScroll) locomotiveScroll.destroy();
-  };
+    locomotiveScroll.update();
+    window.scroll = locomotiveScroll;
+    return () => {
+      if (locomotiveScroll) locomotiveScroll.destroy();
+    };
 });
 
   return (
-      <div data-scroll-container ref={scrollRef} className='bg-light-green'>
+      <div data-scroll-container ref={scrollRef} className='smooth-scroll bg-light-green'>
         <title>Justin Caovan | Front End Developer</title>
           <Nav />
           <Hero />
