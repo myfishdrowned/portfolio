@@ -6,7 +6,7 @@ import {javascript, html, css, react, redux, gatsby, tailwind, webpack, graphql,
 function Skills() {
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.5
+        threshold: 0.2
     })
 
     useEffect(() => {
@@ -19,13 +19,25 @@ function Skills() {
         visible: {
             y: 0, opacity: 1,
             transition: {
-                delayChildren: .2,
-                staggerChildren: .3,
+                when: 'beforeChildren',
+                staggerChildren: .2,
                 duration: 1,
             }
         },
         hidden: {
-            y: '10vw', opacity: 0
+            y: '5vw', opacity: 0
+        }
+    }
+
+    const icons = {
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 1
+            }
+        },
+        hidden: {
+            opacity: 0
         }
     }
 
@@ -48,23 +60,23 @@ function Skills() {
                     <motion.h2 variants={list} className='font-display text-lg'>Languages and Frameworks</motion.h2>
                     <motion.ul variants={list}
                         className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
-                        <motion.li variants={list} className='icon'>{html} HTML5</motion.li>
-                        <motion.li variants={list} className='icon'>{css} CSS3</motion.li>
-                        <motion.li variants={list} className='icon'>{javascript}JavaScript</motion.li>
-                        <motion.li variants={list} className='icon'>{react}React</motion.li>
-                        <motion.li variants={list} className='icon'>{gatsby}Gatsby</motion.li>
-                        <motion.li variants={list} className='icon'>{tailwind}Tailwind</motion.li>
+                        <motion.li variants={icons} className='icon'>{html} HTML5</motion.li>
+                        <motion.li variants={icons} className='icon'>{css} CSS3</motion.li>
+                        <motion.li variants={icons} className='icon'>{javascript}JavaScript</motion.li>
+                        <motion.li variants={icons} className='icon'>{react}React</motion.li>
+                        <motion.li variants={icons} className='icon'>{gatsby}Gatsby</motion.li>
+                        <motion.li variants={icons} className='icon'>{tailwind}Tailwind</motion.li>
                     </motion.ul>
                 </motion.div>
                 <motion.div variants={list} className='w-1/2'>
                     <motion.h2 variants={list} className='font-display text-lg'>Development Tools</motion.h2>
                     <motion.ul variants={list} className='grid grid-rows-2 grid-cols-3 gap-y-16 font-body justify-items-center text-sm pt-14'>
-                        <motion.li variants={list} className='icon'>{redux}Redux</motion.li>
-                        <motion.li variants={list} className='icon'>{webpack}Webpack</motion.li>
-                        <motion.li variants={list} className='icon'>{graphql}GraphQL</motion.li>
-                        <motion.li variants={list} className='icon'>{heroku}Heroku</motion.li>
-                        <motion.li variants={list} className='icon'>{netlify}Netlify</motion.li>
-                        <motion.li variants={list} className='icon'>{npm}npm</motion.li>
+                        <motion.li variants={icons} className='icon'>{redux}Redux</motion.li>
+                        <motion.li variants={icons} className='icon'>{webpack}Webpack</motion.li>
+                        <motion.li variants={icons} className='icon'>{graphql}GraphQL</motion.li>
+                        <motion.li variants={icons} className='icon'>{heroku}Heroku</motion.li>
+                        <motion.li variants={icons} className='icon'>{netlify}Netlify</motion.li>
+                        <motion.li variants={icons} className='icon'>{npm}npm</motion.li>
                     </motion.ul>
                 </motion.div>
             </motion.div>

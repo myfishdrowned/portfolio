@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion"
 function Bio() {
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.7
+        threshold: 0.8
     })
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function Bio() {
         visible: {
             y: 0,
             opacity: 1,
-            staggerChildren: 5,
+            staggerChildren: .2,
             transition: {
                 duration: 1.5,
             }
