@@ -8,7 +8,7 @@ const About = () => {
         <div data-scroll-section className='flex flex-col divide-y divide-black min-h-screen w-full my-18'>
             <Bio />
             <Skills />
-            <div className='w-2/3 m-auto'></div>
+            <div className='w-3/4 m-auto'></div>
         </div>
     )
 }

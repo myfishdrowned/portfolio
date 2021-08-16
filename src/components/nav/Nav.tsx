@@ -14,7 +14,7 @@ const Nav = () => {
                 delayChildren: 1.5, 
                 staggerChildren: .3
             },
-            whileHover: {
+            hover: {
                 scale: 1.2
             }
         },
@@ -27,8 +27,9 @@ const Nav = () => {
                 variants={nav}
                 initial='hidden'
                 animate='visible'
+                whileHover='hover'
                 className='absolute top-0 right-0 my-12 mx-14 flex font-display justify-end space-x-16 text-light-green'>
-                    <motion.li variants={nav}>About</motion.li>
+                    <motion.li whileHover='hover' variants={nav}>About</motion.li>
                     <motion.li variants={nav}>Projects</motion.li>
                     <motion.li variants={nav}>Contact</motion.li>
             </motion.ul>

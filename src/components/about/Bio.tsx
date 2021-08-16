@@ -5,12 +5,15 @@ import { motion, useAnimation } from "framer-motion"
 function Bio() {
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.8
+        threshold: 0.6
     })
 
     useEffect(() => {
         if (inView) {
             animation.start('visible')
+        } 
+        if (!inView) {
+            animation.start('hidden')
         }
     }, [inView])
 
@@ -20,8 +23,8 @@ function Bio() {
             opacity: 1,
             staggerChildren: .2,
             transition: {
-                duration: 1.5,
-            }
+                duration: 1.5, 
+           }
         },
         hidden: {
             y: '10vw',
@@ -35,13 +38,17 @@ function Bio() {
                     initial='hidden' 
                     animate={animation} 
                     variants={list}
-                       className='m-auto w-3/4 max-w-2xl'>
+                    className='m-auto w-3/4 max-w-2xl'>
                 <h1 
                     data-scroll
                     data-scroll-direction='vertical'
                     data-scroll-speed='-3'
-                className='-ml-28 mt-8 bg-black font-body text-light-green rounded-full h-24 w-24 flex items-center justify-center'>About Me</h1>
-                <motion.p variants={list} className='about font-body text-2xl tracking-wider leading-loose'>
+                    className='-ml-36 mt-8 bg-black font-body text-light-green rounded-full h-24 w-24 flex items-center justify-center'>
+                        About Me
+                </h1>
+                <motion.p 
+                    variants={list} 
+                    className='font-body text-2xl tracking-wider leading-loose'>
                     Self-taught front end web developer based in Phoenix, Arizona.
                     Passion for building intuitive, digital user experiences across websites/applications
                     Continuously looking to create and captivate through intuitive, (something) websites

@@ -6,7 +6,7 @@ import {javascript, html, css, react, redux, gatsby, tailwind, webpack, graphql,
 function Skills() {
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.4
     })
 
     useEffect(() => {
@@ -15,12 +15,12 @@ function Skills() {
         }
     }, [inView])
 
-    const list = {
+    const header = {
         visible: {
             y: 0, opacity: 1,
             transition: {
-                when: 'beforeChildren',
                 staggerChildren: .2,
+                delayChildren: .2, 
                 duration: 1,
             }
         },
@@ -42,24 +42,20 @@ function Skills() {
     }
 
     return(
-        <div ref={ref} className='m-auto flex w-2/3 py-24 my-4'>
-            <motion.div
-                initial='hidden'
-                animate={animation} 
-                variants={list}
-                className='w-1/4 flex flex-col justify-between'>
-                <motion.h1 variants={list} className='font-display text-4xl'>Skills</motion.h1>
-            </motion.div>
+        <div ref={ref} className='m-auto flex w-3/4 py-24 my-4'>
+            <div className='w-1/4 flex flex-col justify-between'>
+                <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>Skills</motion.h1>
+            </div>
 
-            <motion.div 
-            initial='hidden'
-            animate={animation}
-            variants={list}
+            <div 
             className='flex w-3/4 space-x-8 divide-x divide-opacity-30 divide-graphite text-center justify-between'>
-                <motion.div variants={list} className='w-1/2'>
-                    <motion.h2 variants={list} className='font-display text-lg'>Languages and Frameworks</motion.h2>
-                    <motion.ul variants={list}
-                        className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
+                <motion.div            
+                    initial='hidden'
+                    animate={animation}
+                    variants={header} 
+                    className='w-1/2'>
+                    <motion.h2 variants={header} className='font-display text-lg'>Languages and Frameworks</motion.h2>
+                    <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
                         <motion.li variants={icons} className='icon'>{html} HTML5</motion.li>
                         <motion.li variants={icons} className='icon'>{css} CSS3</motion.li>
                         <motion.li variants={icons} className='icon'>{javascript}JavaScript</motion.li>
@@ -68,9 +64,13 @@ function Skills() {
                         <motion.li variants={icons} className='icon'>{tailwind}Tailwind</motion.li>
                     </motion.ul>
                 </motion.div>
-                <motion.div variants={list} className='w-1/2'>
-                    <motion.h2 variants={list} className='font-display text-lg'>Development Tools</motion.h2>
-                    <motion.ul variants={list} className='grid grid-rows-2 grid-cols-3 gap-y-16 font-body justify-items-center text-sm pt-14'>
+                <motion.div 
+                        initial='hidden'
+                        animate={animation}
+                        variants={header} 
+                        className='w-1/2'>
+                    <motion.h2 variants={header} className='font-display text-lg'>Development Tools</motion.h2>
+                    <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 font-body justify-items-center text-sm pt-14'>
                         <motion.li variants={icons} className='icon'>{redux}Redux</motion.li>
                         <motion.li variants={icons} className='icon'>{webpack}Webpack</motion.li>
                         <motion.li variants={icons} className='icon'>{graphql}GraphQL</motion.li>
@@ -79,7 +79,7 @@ function Skills() {
                         <motion.li variants={icons} className='icon'>{npm}npm</motion.li>
                     </motion.ul>
                 </motion.div>
-            </motion.div>
+            </div>
         </div>
     )
 }

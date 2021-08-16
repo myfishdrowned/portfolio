@@ -21,7 +21,7 @@ module.exports = {
       name: `Justin Caovan Portfolio`,
       short_name: `Portfolio`,
       start_url: `/`,
-      icon: `src/images/logo.png`,
+      icon: `src/images/favicon.png`,
       background_color: `#f7f0eb`,
       theme_color: `#a2466c`,
       display: `standalone`,
