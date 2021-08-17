@@ -19,9 +19,6 @@ module.exports = {
         'teal': '#D8DDE1',
         'graphite': '#1E1E21'
       },
-      backgroundImage: theme => ({
-        'hero': "url('/src/images/hero.jpg')",
-      })
     },
   },
   variants: {

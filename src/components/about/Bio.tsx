@@ -12,9 +12,6 @@ function Bio() {
         if (inView) {
             animation.start('visible')
         } 
-        if (!inView) {
-            animation.start('hidden')
-        }
     }, [inView])
 
     const list = {
@@ -58,7 +55,9 @@ function Bio() {
                     {/* Eager to learn new design concepts, technologies and tools - add to my skillset */}
                     {/* Currently open to new opportunities?  */}
                 </motion.p>
-                <motion.button className='bg-black font-body text-light-green border-2 border-black w-max mt-6 p-4'>Get In Touch</motion.button>
+                <motion.button 
+                className='bg-black font-body text-light-green border border-black h-full w-max mt-6 p-4
+                hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl'>Get In Touch</motion.button>
             </motion.div>
         </div>
     )
