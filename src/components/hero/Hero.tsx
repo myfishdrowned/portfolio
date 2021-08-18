@@ -13,9 +13,18 @@ const Hero = () => {
         visible: { 
             y: 0, 
             opacity: 1,
-            transition: {duration: 1}
+            transition: {
+                duration: 1,
+                delayChildren: 3,
+                staggerChildren: .3}
         }
     }
+
+    const icon = {
+        hidden: {opacity: 0},
+        visible: {opacity: 1}
+    }
+
     const [vantaEffect, setVantaEffect] = useState(0)
     const myRef = useRef(null)
 
@@ -59,7 +68,7 @@ const Hero = () => {
                 <motion.div
                     variants={container}
                     initial={{ x: '-50vw', opacity: 0}}
-                    animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 1}}}
+                    animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 0.5}}}
                     className='flex -space-x-2 text-2xl'>
                         <p 
                         data-scroll
@@ -78,17 +87,27 @@ const Hero = () => {
                              data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
 
-                <div className='fixed bottom-10 right-10 flex flex-col space-y-2'>
-                    <div className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
+                <motion.div 
+                    initial='hidden'
+                    animate='visible'
+                    variants={container}
+                    className='fixed bottom-10 right-10 flex flex-col space-y-2'>
+                    <motion.div 
+                        variants={icon}
+                        className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
                         <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5' src={github}/></a>
-                    </div>
-                    <div className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
+                    </motion.div>
+                    <motion.div 
+                        variants={icon}
+                        className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
                         <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5' src={linkedIn}/></a>
-                    </div>
-                    <div className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
+                    </motion.div>
+                    <motion.div 
+                        variants={icon}
+                        className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
                         <a href='mailto:justincaovan@gmail.com' target='_blank'><img className='h-5 w-5' src={gmail}/> </a>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>        
         </div>    
     )
