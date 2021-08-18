@@ -11,7 +11,7 @@ const Nav = () => {
                 type:'spring',
                 bounce: .1,
                 duration: 2.2,
-                delayChildren: 1, 
+                delayChildren: .8, 
                 staggerChildren: .3
             },
             hover: {

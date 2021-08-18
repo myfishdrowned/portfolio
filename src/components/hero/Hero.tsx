@@ -15,8 +15,8 @@ const Hero = () => {
             opacity: 1,
             transition: {
                 duration: 1,
-                delayChildren: 3,
-                staggerChildren: .3}
+                delayChildren: 2.6,
+                staggerChildren: .4}
         }
     }
 
@@ -92,21 +92,21 @@ const Hero = () => {
                     animate='visible'
                     variants={container}
                     className='fixed bottom-10 right-10 flex flex-col space-y-2'>
-                    <motion.div 
-                        variants={icon}
-                        className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                        <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5' src={github}/></a>
-                    </motion.div>
-                    <motion.div 
-                        variants={icon}
-                        className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
-                        <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5' src={linkedIn}/></a>
-                    </motion.div>
-                    <motion.div 
-                        variants={icon}
-                        className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                        <a href='mailto:justincaovan@gmail.com' target='_blank'><img className='h-5 w-5' src={gmail}/> </a>
-                    </motion.div>
+                        <motion.div 
+                            variants={icon}
+                            className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
+                            <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5' src={github}/></a>
+                        </motion.div>
+                        <motion.div 
+                            variants={icon}
+                            className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
+                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5' src={linkedIn}/></a>
+                        </motion.div>
+                        <motion.div 
+                            variants={icon}
+                            className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
+                            <a href='mailto:justincaovan@gmail.com' target='_blank'><img className='h-5 w-5' src={gmail}/> </a>
+                        </motion.div>
                 </motion.div>
             </div>        
         </div>    
