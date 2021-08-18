@@ -30,7 +30,7 @@ const Portfolio = () => {
     }
 
     return (
-        <div ref={ref} data-scroll-section id='container' className='bg-graphite text-light-green w-screen py-14 h-full m-auto'>
+        <div ref={ref} data-scroll-section id='container' className='text-graphite w-screen pt-14 mb-12 h-full'>
             <motion.div className='flex space-x-10 justify-between w-3/4 h-full m-auto' initial='hidden' animate={animation} variants={list}>
                 <motion.div
                     data-scroll
@@ -47,7 +47,7 @@ const Portfolio = () => {
                     <motion.div
                         data-scroll
                         data-scroll-delay='1'
-                        data-scroll-speed='6' 
+                        data-scroll-speed='5' 
                         variants={list}>
                             <Tilt tiltReverse={true} glareEnable={true} glareMaxOpacity={0.2} glareColor="lightblue" glarePosition="all">
                                 <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
@@ -63,7 +63,7 @@ const Portfolio = () => {
                     <motion.div 
                         data-scroll
                         data-scroll-delay='1'
-                        data-scroll-speed='6' 
+                        data-scroll-speed='5' 
                         variants={list}>
                             <Tilt tiltReverse={true} glareEnable={true} glareMaxOpacity={0.2} glareColor="lightblue" glarePosition="all">
                                 <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>

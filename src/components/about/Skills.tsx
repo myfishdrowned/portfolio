@@ -49,7 +49,7 @@ function Skills() {
 
             <div className='flex flex-col w-3/4 space-y-24'>
                 <div className='font-body text-lg tracking-wide leading-loose'>
-                    <p>Experience in building web applications using JavaScript and React. Currently learning Node.js and Express.js to take my applications to the server side.</p>
+                    <motion.p initial='hidden' animate={animation} variants={header}>Experience in building web applications using JavaScript and React. Currently learning Node.js and Express.js to take my applications to the server side.</motion.p>
                 </div>
                 <div className='flex space-x-8 divide-x divide-opacity-30 divide-graphite text-center justify-between'>
                     <motion.div            

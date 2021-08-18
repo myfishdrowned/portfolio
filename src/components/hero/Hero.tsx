@@ -45,8 +45,7 @@ const Hero = () => {
       
     return (
         <div data-scroll-section ref={myRef}>
-            <div
-            className='relative text-light-green font-display h-screen w-screen flex flex-col space-y-6 px-20 justify-center'>
+            <div className='relative text-light-green font-display h-screen w-screen flex flex-col space-y-6 px-20 justify-center'>
                 <motion.h1
                     data-scroll
                     data-scroll-direction='horizontal'
@@ -54,14 +53,14 @@ const Hero = () => {
                     variants={container}
                     initial="hidden"
                     animate="visible"
-                    className='text-8xl'
-                >JUSTIN CAOVAN
+                    className='text-8xl'>
+                        JUSTIN CAOVAN
                 </motion.h1>
                 <motion.div
                     variants={container}
                     initial={{ x: '-50vw', opacity: 0}}
                     animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 1}}}
-                    className='flex text-light-green -space-x-2 text-2xl'>
+                    className='flex -space-x-2 text-2xl'>
                         <p 
                         data-scroll
                         data-scroll-position='top'
@@ -78,10 +77,16 @@ const Hero = () => {
                              data-scroll-direction='vertical'
                              data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
-                <div className='absolute bottom-10 right-10 flex flex-col space-y-2'>
-                    <img className='h-6 w-6' src={linkedIn}/>
-                    <img className='h-6 w-6' src={github}/>
-                    <img className='h-6 w-6' src={gmail}/>
+                <div className='fixed bottom-10 right-10 flex flex-col space-y-2'>
+                    <div className='bg-blue-200 p-2 rounded-full transform duration:200 hover:scale-125'>
+                        <img className='h-5 w-5' src={linkedIn}/>
+                    </div>
+                    <div className='bg-gray-200 p-2 rounded-full transform hover:scale-125'>
+                        <img className='h-5 w-5' src={github}/>
+                    </div>
+                    <div className='bg-red-200 p-2 rounded-full transform hover:scale-125'>
+                        <img className='h-5 w-5' src={gmail}/>
+                    </div>
                 </div>
             </div>        
         </div>    
