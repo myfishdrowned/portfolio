@@ -77,15 +77,16 @@ const Hero = () => {
                              data-scroll-direction='vertical'
                              data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
+
                 <div className='fixed bottom-10 right-10 flex flex-col space-y-2'>
-                    <div className='bg-blue-200 p-2 rounded-full transform duration:200 hover:scale-125'>
-                        <img className='h-5 w-5' src={linkedIn}/>
+                    <div className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
+                        <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5' src={github}/></a>
                     </div>
-                    <div className='bg-gray-200 p-2 rounded-full transform hover:scale-125'>
-                        <img className='h-5 w-5' src={github}/>
+                    <div className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
+                        <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5' src={linkedIn}/></a>
                     </div>
-                    <div className='bg-red-200 p-2 rounded-full transform hover:scale-125'>
-                        <img className='h-5 w-5' src={gmail}/>
+                    <div className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
+                        <a href='mailto:justincaovan@gmail.com' target='_blank'><img className='h-5 w-5' src={gmail}/> </a>
                     </div>
                 </div>
             </div>        
