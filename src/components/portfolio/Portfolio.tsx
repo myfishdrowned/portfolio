@@ -30,8 +30,8 @@ const Portfolio = () => {
     }
 
     return (
-        <div ref={ref} data-scroll-section id='container' className='text-graphite w-screen pt-14 mb-12 h-full'>
-            <motion.div className='flex space-x-10 justify-between w-3/4 h-full m-auto' initial='hidden' animate={animation} variants={list}>
+        <div ref={ref} data-scroll-section id='container' className='text-graphite w-screen pt-14 mb-24 h-full'>
+            <motion.div className='flex space-x-10 justify-between w-3/4 h-10/12 m-auto' initial='hidden' animate={animation} variants={list}>
                 <motion.div
                     data-scroll
                     data-scroll-sticky
