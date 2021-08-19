@@ -19,8 +19,8 @@ const Contact = () => {
                             <div>
                                 <p>Or find me here</p>
                                 <div className='flex space-x-2'>
-                                    <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5' src={github}/></a>
-                                    <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5' src={linkedIn}/></a>
+                                    <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5 hover:scale-125 transition duration-150' src={github}/></a>
+                                    <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5 hover:scale-125 transition duration-150' src={linkedIn}/></a>
                                 </div>
                             </div>
                         </div>
