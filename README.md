@@ -3,8 +3,7 @@
 </h1>
 
 <h2 align="center">
-  <a href='https://justincaovan.com/'><img alt="Icon" src="src/images/favicon.png" width="32" />
-justincaovan.com </a>
+  <a href='https://justincaovan.com/'>justincaovan.com </a>
 </h2>
 
 ## Description
