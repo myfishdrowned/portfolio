@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from "framer-motion"
+import { navigate } from '@reach/router'
 
 function Bio() {
     const animation = useAnimation()
@@ -40,8 +41,8 @@ function Bio() {
                     data-scroll
                     data-scroll-direction='vertical'
                     data-scroll-speed='-3'
-                    className='-ml-36 mt-8 bg-black bg-opacity-90 font-display text-light-green rounded-full h-24 w-24 flex items-center justify-center'>
-                        About Me
+                    className='-ml-36 mt-8 bg-black bg-opacity-90 font-display text-light-green rounded-full h-24 w-24 flex items-center justify-center cursor-default'>
+                        <p className='tracking-wide transform transition duration-200 hover:scale-110 hover:tracking-wider hover:text-yellow-500'>About Me</p>
                 </h1>
                 <motion.p 
                     variants={list} 
@@ -55,9 +56,9 @@ function Bio() {
                     {/* Eager to learn new design concepts, technologies and tools - add to my skillset */}
                     {/* Currently open to new opportunities?  */}
                 </motion.p>
-                <motion.button 
-                className='bg-black bg-opacity-90 font-display text-light-green h-full w-max mt-6 p-4
-                hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl'>Get In Touch</motion.button>
+                <motion.button className='bg-black bg-opacity-90 font-display text-light-green h-full w-max mt-6 p-4
+                hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500' 
+                onClick ={()=> {navigate('#contact')}}>Get In Touch</motion.button>
             </motion.div>
         </div>
     )

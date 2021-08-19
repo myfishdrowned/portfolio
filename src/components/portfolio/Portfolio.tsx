@@ -31,7 +31,7 @@ const Portfolio = () => {
 
     return (
         <div ref={ref} data-scroll-section id='container' className='text-graphite w-screen pt-14 mb-24 h-full'>
-            <motion.div className='flex space-x-10 justify-between w-3/4 h-10/12 m-auto' initial='hidden' animate={animation} variants={list}>
+            <motion.div id='portfolio' className='flex space-x-10 justify-between w-3/4 h-10/12 m-auto' initial='hidden' animate={animation} variants={list}>
                 <motion.div
                     data-scroll
                     data-scroll-sticky
@@ -46,7 +46,7 @@ const Portfolio = () => {
                     className='flex flex-col w-3/4 h-full text-center'>
                     <motion.div
                         data-scroll
-                        data-scroll-delay='1'
+                        data-scroll-delay='.1'
                         data-scroll-speed='5' 
                         variants={list}>
                             <Tilt tiltReverse={true} glareEnable={true} glareMaxOpacity={0.2} glareColor="lightblue" glarePosition="all">
@@ -62,14 +62,14 @@ const Portfolio = () => {
                     </motion.div>
                     <motion.div 
                         data-scroll
-                        data-scroll-delay='1'
+                        data-scroll-delay='.1'
                         data-scroll-speed='5' 
                         variants={list}>
                             <Tilt tiltReverse={true} glareEnable={true} glareMaxOpacity={0.2} glareColor="lightblue" glarePosition="all">
                                 <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                             </Tilt>
                             <ProjectCard 
-                                name = {'Weather App'}
+                                name = {'Breezy'}
                                 tags = { ['React', 'TailwindCSS']}
                                 github = {'https://github.com/jtcaovan/WeatherApp'}
                                 liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}

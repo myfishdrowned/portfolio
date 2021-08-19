@@ -95,17 +95,17 @@ const Hero = () => {
                         <motion.div 
                             variants={icon}
                             className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='https://github.com/jtcaovan' target='_blank' ><img className='h-5 w-5' src={github}/></a>
+                            <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer"><img className='h-5 w-5' src={github}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
-                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' ><img className='h-5 w-5' src={linkedIn}/></a>
+                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer"><img className='h-5 w-5' src={linkedIn}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='mailto:justincaovan@gmail.com' target='_blank'><img className='h-5 w-5' src={gmail}/> </a>
+                            <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-5 w-5' src={gmail}/> </a>
                         </motion.div>
                 </motion.div>
             </div>        
