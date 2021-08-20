@@ -41,12 +41,15 @@ function Bio() {
                     data-scroll
                     data-scroll-direction='vertical'
                     data-scroll-speed='-3'
-                    className='-ml-36 mt-8 bg-black bg-opacity-90 font-display text-light-green rounded-full h-24 w-24 flex items-center justify-center cursor-default'>
-                        <p className='tracking-wide transform transition duration-200 hover:scale-110 hover:tracking-wider hover:text-yellow-500'>About Me</p>
+                    className='my-8 md:my-0 md:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
+                    rounded-full h-24 w-24 flex items-center justify-center cursor-default'>
+                        <p className='tracking-wide transform transition duration-200 hover:scale-110 hover:tracking-wider hover:text-yellow-500'>
+                            About Me
+                        </p>
                 </h1>
                 <motion.p 
                     variants={list} 
-                    className='font-body text-graphite text-2xl tracking-wider leading-loose'>
+                    className='font-body text-graphite text-lg md:text-2xl tracking-wider leading-loose'>
                     Self-taught front end web developer based in Phoenix, Arizona.
                     Passion for building intuitive, digital user experiences across websites/applications
                     Continuously looking to create and captivate through intuitive, (something) websites

@@ -20,13 +20,13 @@ const Nav = () => {
 
     return (
         <div data-scroll-section className='relative z-10'>
-            <motion.ul className='absolute top-0 right-0 my-12 mx-14 flex font-display justify-end space-x-16 text-light-green'
+            <motion.ul className='absolute top-0 right-0 my-12 mx-6 md:mx-14 flex font-display justify-end space-x-8 md:space-x-16 text-light-green 2xl:text-lg'
                 variants={nav}
                 initial='hidden'
                 animate='visible'>
-                    <motion.li className='border-light-green hover:border-b cursor-pointer' whileHover={{scale: 1.2}} onClick ={()=> {navigate('#about')}} variants={nav}>About</motion.li>
-                    <motion.li className='border-light-green hover:border-b cursor-pointer' whileHover={{scale: 1.2}} onClick ={()=> {navigate('#portfolio')}} variants={nav}>Projects</motion.li>
-                    <motion.li className='border-light-green hover:border-b cursor-pointer' whileHover={{scale: 1.2}} onClick ={()=> {navigate('#contact')}} variants={nav}>Contact</motion.li>
+                    <motion.li className='border-yellow-500 hover:border-b hover:text-yellow-500 cursor-pointer' whileHover={{scale: 1.2}} onClick ={()=> {navigate('#about')}} variants={nav}>About</motion.li>
+                    <motion.li className='border-yellow-500 hover:border-b hover:text-yellow-500 cursor-pointer' whileHover={{scale: 1.2}} onClick ={()=> {navigate('#portfolio')}} variants={nav}>Projects</motion.li>
+                    <motion.li className='border-yellow-500 hover:border-b hover:text-yellow-500 cursor-pointer' whileHover={{scale: 1.2}} onClick ={()=> {navigate('#contact')}} variants={nav}>Contact</motion.li>
             </motion.ul>
         </div>
     )

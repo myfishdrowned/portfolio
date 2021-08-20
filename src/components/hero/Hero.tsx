@@ -54,7 +54,7 @@ const Hero = () => {
       
     return (
         <div data-scroll-section ref={myRef}>
-            <div className='relative text-light-green font-display h-screen w-screen flex flex-col space-y-6 px-20 justify-center'>
+            <div className='relative justify-center text-light-green font-display h-screen w-screen flex flex-col space-y-6 2xl:space-y-12 px-20 2xl:px-64'>
                 <motion.h1
                     data-scroll
                     data-scroll-direction='horizontal'
@@ -62,14 +62,14 @@ const Hero = () => {
                     variants={container}
                     initial="hidden"
                     animate="visible"
-                    className='text-8xl'>
+                    className='text-6xl md:text-8xl 2xl:text-9xl'>
                         JUSTIN CAOVAN
                 </motion.h1>
                 <motion.div
                     variants={container}
                     initial={{ x: '-50vw', opacity: 0}}
                     animate={{ x: 0, opacity: 1, transition: {type: 'spring', duration: 3, delay: 0.5}}}
-                    className='flex -space-x-2 text-2xl'>
+                    className='flex space-x-2 md:-space-x-2 text-xl md:text-2xl 2xl:text-4xl'>
                         <p 
                         data-scroll
                         data-scroll-position='top'
@@ -87,25 +87,34 @@ const Hero = () => {
                              data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div className='absolute bottom-10 right-1/2 md:right-1/3 flex flex-col justify-center space-y-4 overflow-hidden'
                     initial='hidden'
                     animate='visible'
-                    variants={container}
-                    className='fixed bottom-10 right-10 flex flex-col space-y-2'>
+                    variants={container}>
+                    <motion.p variants={icon} className='text-sm md:text-md 2xl:text-lg font-body tracking-wider animate-bounce'>Scroll</motion.p>
+                    <motion.svg variants={icon} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-light-green m-auto animate-bounce transition duration-150 hover:text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                    </motion.svg>
+                </motion.div> 
+
+                <motion.div className='absolute bottom-10 right-10 flex flex-col space-y-2'
+                    initial='hidden'
+                    animate='visible'
+                    variants={container}>
                         <motion.div 
                             variants={icon}
                             className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer"><img className='h-5 w-5' src={github}/></a>
+                            <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' src={github}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
-                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer"><img className='h-5 w-5' src={linkedIn}/></a>
+                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' src={linkedIn}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-5 w-5' src={gmail}/> </a>
+                            <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' src={gmail}/> </a>
                         </motion.div>
                 </motion.div>
             </div>        

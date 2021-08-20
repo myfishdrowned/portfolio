@@ -42,21 +42,26 @@ function Skills() {
     }
 
     return(
-        <div ref={ref} className='m-auto flex w-3/4 py-24 my-4'>
+        <div ref={ref} className='flex flex-col md:flex-row space-y-8 md:space-y-0 w-full md:w-3/4 py-24 mx-8 my-0 md:m-auto md:my-4'>
             <div className='w-1/4 flex flex-col justify-between'>
-                <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>Skills</motion.h1>
+                <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>
+                    Skills
+                </motion.h1>
             </div>
 
-            <div className='flex flex-col w-3/4 space-y-24'>
+            <div className='flex flex-col w-10/12 md:w-3/4 space-y-24'>
                 <div className='font-body text-lg tracking-wide leading-loose'>
-                    <motion.p initial='hidden' animate={animation} variants={header}>Experience in building web applications using JavaScript and React. Currently learning Node.js and Express.js to take my applications to the server side.</motion.p>
+                    <motion.p initial='hidden' animate={animation} variants={header}>
+                        Experience in building web applications using JavaScript and React. 
+                        Currently learning Node.js and Express.js to take my applications to the server side.
+                    </motion.p>
                 </div>
-                <div className='flex space-x-8 divide-x divide-opacity-30 divide-graphite text-center justify-between'>
+                <div className='flex flex-col md:flex-row space-y-12 md:space-y-0 md:space-x-8 md:divide-x divide-opacity-30 divide-graphite text-center justify-between'>
                     <motion.div            
                         initial='hidden'
                         animate={animation}
                         variants={header} 
-                        className='w-1/2'>
+                        className='w-full md:w-1/2'>
                         <motion.h2 variants={header} className='font-display text-lg'>Languages and Frameworks</motion.h2>
                         <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
                             <motion.li variants={icons} className='icon'>{html} HTML5</motion.li>
@@ -71,7 +76,7 @@ function Skills() {
                             initial='hidden'
                             animate={animation}
                             variants={header} 
-                            className='w-1/2'>
+                            className='w-full md:w-1/2'>
                         <motion.h2 variants={header} className='font-display text-lg'>Development Tools</motion.h2>
                         <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 font-body justify-items-center text-sm pt-14'>
                             <motion.li variants={icons} className='icon'>{redux}Redux</motion.li>

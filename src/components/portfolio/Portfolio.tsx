@@ -73,7 +73,7 @@ const Portfolio = () => {
                                 tags = { ['React', 'TailwindCSS']}
                                 github = {'https://github.com/jtcaovan/WeatherApp'}
                                 liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
-                                description = { 'A widget-style weather application that displays the current weather, forecast, and details of over 200,000 cities in the world. Weather data is fetched using OpenWeather API.'}
+                                description = { 'A widget-style weather application that displays the current weather, forecast, and details of over 200,000 cities in the world. Weather data is fetched using OpenWeather API. So simple and easy to use, it\'s Breezy.'}
                             /> 
                     </motion.div>
                 </motion.div>
