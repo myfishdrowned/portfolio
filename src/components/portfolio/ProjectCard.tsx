@@ -14,7 +14,7 @@ function ProjectCard(prop) {
         <div className='relative p-4 font-body flex-col space-y-4 justify-center h-full w-full'>
             <p className='tracking-wider text-3xl'>{prop.name}</p>
             <ul className='flex space-x-2 m-auto justify-center opacity-85'>{tags}</ul>
-            <p className='text-lg w-11/12 m-auto leading-loose'>{prop.description}</p>
+            <p className='text-md md:text-lg w-full md:w-11/12 m-auto leading-loose'>{prop.description}</p>
             <div className='absolute top-2 right-1 flex space-x-2'>
                 <a title='Source Code' href={prop.github} target='_blank' rel="noopener noreferrer"><img className='h-6 w-6 hover:scale-125 active:scale-95 transition duration-150' src={github} /></a>
                 <a title='Live Demo' href={prop.liveDemo} target='_blank' rel="noopener noreferrer"><img className='h-6 w-6 hover:scale-125 active:scale-95 transition duration-150' src={demo} /></a>

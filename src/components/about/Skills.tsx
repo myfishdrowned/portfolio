@@ -42,14 +42,14 @@ function Skills() {
     }
 
     return(
-        <div ref={ref} className='flex flex-col md:flex-row space-y-8 md:space-y-0 w-full md:w-3/4 py-24 mx-8 my-0 md:m-auto md:my-4'>
-            <div className='w-1/4 flex flex-col justify-between'>
+        <div ref={ref} className='flex flex-col md:flex-row space-y-8 md:space-y-0 w-3/4 py-12 md:py-24 mx-8 my-0 md:m-auto md:my-4'>
+            <div className='w-full text-center md:w-1/4'>
                 <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>
                     Skills
                 </motion.h1>
             </div>
 
-            <div className='flex flex-col w-10/12 md:w-3/4 space-y-24'>
+            <div className='flex flex-col w-full text-center md:w-3/4 space-y-24'>
                 <div className='font-body text-lg tracking-wide leading-loose'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
                         Experience in building web applications using JavaScript and React. 
