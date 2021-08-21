@@ -18,6 +18,11 @@ I wanted to use this project to not only display my projects and current skills 
 * Smooth, parrallax scrolling and scroll-based animations
 * A minimal design with clean typography and a generous amount of white space
 
+## Features
+* Smooth, parallax scrolling and scroll based animation (Locomotion Scroll and Framer Motion)
+* Responsive design
+* A working email form submission sent from client-side (EmailJS)
+
 ## Development Stack
 After much research, I chose to use Gatsby as my frontend framework because of how it precomputes all of the state in an application, resulting in fast web performance. I initially started off using Sass for styling but the found the development process to be slow so I switched to the utility classes of TailwindCSS. For smooth scrolling and scroll-based animations, I found Locomotive.js (smooth scrolling) and Framer Motion (animation library for React) to work the best.
 * Gatsby
