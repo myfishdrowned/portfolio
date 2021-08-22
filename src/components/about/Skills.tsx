@@ -52,7 +52,11 @@ function Skills() {
             <div className='flex flex-col w-full text-center md:w-3/4 space-y-24'>
                 <div className='font-body text-lg tracking-wide leading-loose'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
-                        Experience in building web applications using JavaScript and React. 
+                        Experience in building front-end web applications and components using Javascript (ES6), HTML3, and CSS3
+                        with a help of React and Gatsbyjs.
+
+                        - with a willingness to work with 
+                        new technologies. 
                         Currently learning Node.js and Express.js to take my applications to the server side.
                     </motion.p>
                 </div>
