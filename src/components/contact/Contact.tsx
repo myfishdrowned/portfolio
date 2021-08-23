@@ -1,13 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ContactForm from './ContactForm'
 import linkedIn from "../../images/linkedin.svg"
 import github from "../../images/github.svg"
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import { navigate } from '@reach/router'
 
 const Contact = () => {
+    const animation = useAnimation()
+    const {ref, inView} = useInView({
+        threshold: 0.2
+    })
+
+    useEffect(() => {
+        if (inView) {
+            animation.start('visible')
+        }
+    }, [inView])
+
+    const list = {
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 1,
+            }
+        },
+        hidden: {
+             opacity: 0
+        }
+    }
+
     return (
-        <div id='contact' data-scroll-section className='bg-graphite text-center h-full w-screen py-12'>
-            <div className='w-5/6 md:w-4/5 h-full m-auto pt-10'>
+        <div ref={ref} id='contact' data-scroll-section className='bg-graphite text-center h-full w-screen py-12'>
+            <motion.div className='w-5/6 md:w-4/5 h-full m-auto pt-10'
+                initial='visible'
+                animate={animation}
+                variants={list}>
                 <div className='flex flex-col md:flex-row md:text-left align-start h-full md:space-x-16'>
                     <div className='flex flex-col space-y-12 w-full md:w-1/2 mb-12 md:mb-0 p-12 h-full bg-light-green text-graphite'>
                         <h2 className='font-display text-4xl'>
@@ -48,7 +76,7 @@ const Contact = () => {
                     </svg>
                     <p className='text-light-green font-display text-sm'>Designed and developed by Justin Caovan © 2021</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
