@@ -32,7 +32,7 @@ const Portfolio = () => {
     return (
         <div ref={ref} data-scroll-section id='container' className='text-graphite w-screen pt-14 mb-24 h-full'>
             <motion.div id='portfolio' 
-                className='flex flex-col space-y-12 md:space-y-0 text-center md:flex-row md:space-x-10 justify-between w-3/4 h-10/12 m-auto' 
+                className='flex flex-col space-y-12 md:space-y-0 text-center md:text-left md:flex-row md:space-x-10 justify-between w-3/4 h-10/12 m-auto' 
                 initial='hidden' 
                 animate={animation} 
                 variants={list}>
@@ -41,7 +41,7 @@ const Portfolio = () => {
                     data-scroll-sticky
                     data-scroll-target='#container'
                     variants={list}
-                    className='flex flex-row space-x-2 md:flex-col md:space-y-2 md:w-full md:w-1/4 h-full text-4xl font-display'>
+                    className='flex flex-row space-x-2 md:flex-col md:space-y-2 w-full md:w-1/4 h-full text-4xl font-display'>
                         <p>Featured</p>
                         <p className='md:ml-8'>Projects</p>
                 </motion.div>

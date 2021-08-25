@@ -49,10 +49,10 @@ function Bio() {
                 </h1>
                 <motion.p 
                     variants={list} 
-                    className='font-body text-graphite text-lg md:text-2xl tracking-wider leading-loose'>
+                    className='font-body text-graphite text-lg md:text-2xl leading-loose tracking-wider'>
                     Self-taught front end web developer based in Phoenix, Arizona.
                     Passion for building intuitive, digital user experiences across websites/applications
-                    Continuously looking to create and captivate through intuitive, (something) websites
+                    Continuously looking to create and captivate through intuitive, something websites
 
                     {/* Kinesiology and Sports Medicine graduate turned self-taught front-end developer? */}
                     {/* Enjoy the process of implementing and bringing ideas to life on screen. */}

@@ -31,7 +31,7 @@ const Contact = () => {
     }
 
     return (
-        <div ref={ref} id='contact' data-scroll-section className='bg-graphite text-center h-full w-screen py-12'>
+        <div ref={ref} id='contact' data-scroll-section className='bg-graphite text-center h-full w-screen pb-12 pt-24 mt-12'>
             <motion.div className='w-5/6 md:w-4/5 h-full m-auto pt-10'
                 initial='visible'
                 animate={animation}
