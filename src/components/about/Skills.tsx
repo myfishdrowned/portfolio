@@ -43,21 +43,19 @@ function Skills() {
 
     return(
         <div ref={ref} className='flex flex-col md:flex-row space-y-8 md:space-y-0 w-3/4 py-12 md:py-24 mx-8 my-0 md:m-auto md:my-4'>
-            <div className='w-full text-center md:w-1/4'>
+            <div className='w-full text-center md:text-left md:w-1/4'>
                 <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>
                     Skills
                 </motion.h1>
             </div>
 
             <div className='flex flex-col w-full text-center md:w-3/4 space-y-24'>
-                <div className='font-body text-lg tracking-wide leading-loose'>
+                <div className='font-body text-lg leading-loose text-left'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
-                        Experience in building front-end web applications and components using Javascript (ES6), HTML3, and CSS3
-                        with a help of React and Gatsbyjs.
+                        Experience in building modern web applications and components using React.js, Javascript (ES6), HTML3, and CSS3.
 
-                        - with a willingness to work with 
-                        new technologies. 
-                        Currently learning Node.js and Express.js to take my applications to the server side.
+                        - A willingness to explore and learn new technologies. 
+                        Currently learning Node.js and Express.js
                     </motion.p>
                 </div>
                 <div className='flex flex-col md:flex-row space-y-12 md:space-y-0 md:space-x-8 md:divide-x divide-opacity-30 divide-graphite text-center justify-between'>

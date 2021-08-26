@@ -23,11 +23,11 @@ function ContactForm() {
         <>
             <form className='flex flex-col h-full space-y-8 leading-loose tracking-wide' onSubmit={sendEmail}>
                 <div className='flex space-x-4'>
-                    <input type='text' name='name' placeholder='Your name' required className='bg-light-green w-1/2 rounded'/>
-                    <input type='email' name='email' placeholder='Your email' required className='bg-light-green w-1/2 rounded'/>
+                    <input type='text' name='name' placeholder='Your name' required className='bg-light-green border-2 w-1/2 rounded transition transform duration-150 hover:scale-105 hover:border-yellow-500'/>
+                    <input type='email' name='email' placeholder='Your email' required className='bg-light-green w-1/2 rounded transition transform duration-150 hover:scale-105 hover:border-yellow-500'/>
                 </div>
-                <input type='text' name='subject' placeholder='Subject' className='bg-light-green rounded'/>
-                <textarea name='message' placeholder='Your message...' required className='bg-light-green h-2/3 rounded'/>
+                <input type='text' name='subject' placeholder='Subject' className='bg-light-green rounded transition transform duration-150 hover:scale-105 hover:border-yellow-500'/>
+                <textarea name='message' placeholder='Your message...' required className='bg-light-green h-2/3 rounded transition transform duration-150 hover:scale-105 hover:border-yellow-500'/>
                 <input type='submit' value='Send Message' className='bg-light-green text-center p-4 font-body cursor-pointer rounded hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200'/>
             </form>
             <Modal showModal={showModal} setShowModal={setShowModal} />

@@ -47,19 +47,20 @@ function Bio() {
                             About Me
                         </p>
                 </h1>
-                <motion.p 
-                    variants={list} 
-                    className='font-body text-graphite text-lg md:text-2xl leading-loose tracking-wider'>
-                    Self-taught front end web developer based in Phoenix, Arizona.
-                    Passion for building intuitive, digital user experiences across websites/applications
-                    Continuously looking to create and captivate through intuitive, something websites
+                <motion.p className='font-body text-graphite leading-relaxed text-lg md:text-2xl md:leading-loose'
+                variants={list}>
+                    I'm a self-taught front end web developer based in Phoenix, Arizona.
+                    Passion for building intuitive, digital user interfaces across websites and applications.
+                    Continuously looking for ways to improve my craft by creating the best possible user experiences.
+                    
+                    {/* Continuously looking to create and captivate through intuitive, something websites. */}
 
                     {/* Kinesiology and Sports Medicine graduate turned self-taught front-end developer? */}
                     {/* Enjoy the process of implementing and bringing ideas to life on screen. */}
                     {/* Eager to learn new design concepts, technologies and tools - add to my skillset */}
                     {/* Currently open to new opportunities?  */}
                 </motion.p>
-                <motion.button className='bg-black bg-opacity-90 font-display text-light-green h-full w-max mt-6 p-4
+                <motion.button className='bg-black bg-opacity-90 font-display text-light-green h-full w-max mt-8 p-4
                 hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500' 
                 onClick ={()=> {navigate('#contact')}}>Get In Touch</motion.button>
             </motion.div>
