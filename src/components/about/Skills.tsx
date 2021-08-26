@@ -19,7 +19,7 @@ function Skills() {
         visible: {
             y: 0, opacity: 1,
             transition: {
-                staggerChildren: .2,
+                staggerChildren: .15,
                 delayChildren: .2, 
                 duration: 1,
             }
