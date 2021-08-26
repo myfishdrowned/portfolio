@@ -53,6 +53,7 @@ function Bio() {
                     Passion for building intuitive, digital user interfaces across websites and applications.
                     Continuously looking for ways to improve my craft by creating the best possible user experiences.
                     
+                    {/* With a passion for building intuitive, digital user interfaces, I'm continuously looking for ways to improve my skills and knowledge as a developer. */}
                     {/* Continuously looking to create and captivate through intuitive, something websites. */}
 
                     {/* Kinesiology and Sports Medicine graduate turned self-taught front-end developer? */}

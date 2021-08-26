@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from "react"
+import { Helmet } from "react-helmet"
 import Nav from '../components/nav/Nav'
 import Hero from '../components/hero/Hero'
 import About from '../components/about/About'
@@ -23,12 +24,16 @@ const IndexPage = () => {
 
   return (
       <div data-scroll-container ref={scrollRef} className='smooth-scroll bg-light-green overflow-hidden'>
-        <title>Justin Caovan | Front End Developer</title>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Justin Caovan | Front End Developer</title>
+          <link rel="canonical" href="https://justincaovan.com" />
           <Nav />
           <Hero />
           <About/>
           <Projects />
           <Contact />
+        </Helmet>
       </div>
   )
 }
