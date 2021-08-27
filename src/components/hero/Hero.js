@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
+import Nav from '../nav/Nav'
 import loadable from '@loadable/component'
 import NET from 'vanta/dist/vanta.net.min'
 import { motion } from "framer-motion"
@@ -6,7 +7,7 @@ import * as THREE from 'three'
 import linkedIn from "../../images/linkedin.svg"
 import github from "../../images/github.svg"
 import gmail from "../../images/gmail.svg"
-const Nav = loadable(() => import('../nav/Nav'));
+// const Nav = loadable(() => import('../nav/Nav'));
 
 
 const Hero = () => {

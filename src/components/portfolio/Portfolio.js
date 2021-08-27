@@ -10,7 +10,7 @@ import loadable from '@loadable/component'
 const Portfolio = () => {
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.2
+        threshold: 0.3
     })
 
     useEffect(() => {
@@ -46,7 +46,7 @@ const Portfolio = () => {
 
                 <motion.div           
                     className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
-                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='3' data-scroll-position='bottom' variants={list}>
+                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='3' variants={list}>
                         <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
                         <ProjectCard
                             name= {'Bloom'}
@@ -56,7 +56,7 @@ const Portfolio = () => {
                             description = {'A single-page indoor plant e-commerce web application with a focus on front-end user interface. Users can add, modify, and remove items from their cart as well as filter products by category.'}
                         />
                     </motion.div>
-                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='3' data-scroll-position='bottom' variants={list}>
+                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='3' variants={list}>
                         <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'Breezy'}
