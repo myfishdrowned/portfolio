@@ -5,19 +5,21 @@ import github from "../../images/github.svg"
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { navigate } from '@reach/router'
+// import loadable from '@loadable/component'
+// const ContactForm = loadable(() => import('./ContactForm'));
 
 const Contact = () => {
     const animation = useAnimation()
     const {ref, inView} = useInView({
         threshold: 0.5
     })
-
+    
     useEffect(() => {
         if (inView) {
             animation.start('visible')
         }
     }, [inView])
-
+    
     const list = {
         visible: {
             y:0,
@@ -61,10 +63,10 @@ const Contact = () => {
                                 <p>Or find me here</p>
                                 <div className='flex justify-center md:justify-start space-x-2'>
                                     <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer">
-                                        <img className='h-5 w-5 hover:scale-125 active:scale-95 transition duration-150' src={github}/>
+                                        <img className='h-5 w-5 hover:scale-125 active:scale-95 transition duration-150' alt='github' src={github}/>
                                     </a>
                                     <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer">
-                                        <img className='h-5 w-5 hover:scale-125 active:scale-95 transition duration-150' src={linkedIn}/>
+                                        <img className='h-5 w-5 hover:scale-125 active:scale-95 transition duration-150' alt='linkedin' src={linkedIn}/>
                                     </a>
                                 </div>
                             </div>

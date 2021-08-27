@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from "framer-motion"
 import { navigate } from '@reach/router'

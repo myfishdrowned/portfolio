@@ -13,9 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'orange': '#EB5E28',
         'light-green': '#F1F6FA',
-        'teal': '#62929E',
         'graphite': '#1E1E21',
       },
     },

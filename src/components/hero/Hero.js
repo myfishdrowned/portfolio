@@ -1,10 +1,13 @@
 import React, {useState, useEffect, useRef} from 'react'
+import loadable from '@loadable/component'
 import NET from 'vanta/dist/vanta.net.min'
 import { motion } from "framer-motion"
 import * as THREE from 'three'
 import linkedIn from "../../images/linkedin.svg"
 import github from "../../images/github.svg"
 import gmail from "../../images/gmail.svg"
+const Nav = loadable(() => import('../nav/Nav'));
+
 
 const Hero = () => {
 
@@ -54,6 +57,7 @@ const Hero = () => {
       
     return (
         <div data-scroll-section ref={myRef}>
+            <Nav/>
             <div className='relative justify-center text-light-green font-display h-screen w-screen flex flex-col space-y-6 2xl:space-y-12 px-20 2xl:px-64'>
                 <motion.h1
                     data-scroll
@@ -91,7 +95,7 @@ const Hero = () => {
                     initial='hidden'
                     animate='visible'
                     variants={container}>
-                    <motion.p variants={icon} className='text-sm md:text-md 2xl:text-lg font-body tracking-wider animate-bounce'>Scroll</motion.p>
+                    <motion.p variants={icon} className='text-sm md:text-md 2xl:text-lg font-display tracking-wider animate-bounce'>Scroll</motion.p>
                     <motion.svg variants={icon} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-light-green m-auto animate-bounce transition duration-150 hover:text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
                     </motion.svg>
@@ -104,17 +108,17 @@ const Hero = () => {
                         <motion.div 
                             variants={icon}
                             className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' src={github}/></a>
+                            <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Github' aria-label="Github" src={github}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
-                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' src={linkedIn}/></a>
+                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='LinkedIn' aria-label="Linkedin" src={linkedIn}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' src={gmail}/> </a>
+                            <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Gmail' aria-label="Gmail" src={gmail}/> </a>
                         </motion.div>
                 </motion.div>
             </div>        
