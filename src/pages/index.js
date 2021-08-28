@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from "react"
 import { Helmet } from "react-helmet"
 import Hero from '../components/hero/Hero';
+import Nav from '../components/nav/Nav';
 import About from '../components/about/About'
 import Projects from '../components/portfolio/Portfolio'
 import Contact from '../components/contact/Contact'
@@ -19,7 +20,7 @@ const IndexPage = () => {
     return () => {
       if (locomotiveScroll) locomotiveScroll.destroy();
     };
-},[]);
+});
 
   return (
       <div data-scroll-container ref={scrollRef} className='smooth-scroll bg-light-green overflow-hidden'>
@@ -28,7 +29,7 @@ const IndexPage = () => {
           <title>Justin Caovan | Front End Developer</title>
           <link rel="canonical" href="https://www.justincaovan.com" />
         </Helmet>
-          {/* <Nav /> */}
+          <Nav />
           <Hero />
           <About/>
           <Projects />
