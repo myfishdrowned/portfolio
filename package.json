@@ -5,7 +5,11 @@
   "description": "Justin Caovan's personal portfolio website",
   "author": "Justin Caovan",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "website design",
+    "web developer personal portfolio",
+    "front end developer personal portfolio",
+    "responsive website design"
   ],
   "scripts": {
     "develop": "gatsby develop",

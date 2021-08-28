@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://justincaovan.com",
-    title: "justincaovan.com",
+    siteUrl: "https://www.justincaovan.com",
+    title: "Justin Caovan | Front End Developer",
+    description: "Personal portfolio website for Justin Caovan with contact information, personal projects, and biography",
+    author: "Justin Caovan"
   },
   plugins: ["gatsby-plugin-gatsby-cloud",
   'gatsby-plugin-postcss',
@@ -9,6 +11,7 @@ module.exports = {
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   `gatsby-plugin-react-helmet`,
+  'gatsby-plugin-loadable-components-ssr',
   {
     resolve: `gatsby-source-filesystem`,
     options: {

@@ -29,7 +29,7 @@ return (
                 initial='hidden'
                 animate='visible'
                 exit='exit'
-                className='absolute flex justify-center items-center bg-gray-700 bg-opacity-30 left-0 right-0 bottom-10 h-screen w-full'>
+                className='absolute flex justify-center items-center left-0 right-0 bottom-10 h-screen w-full'>
                     <motion.div variants={content} className='flex flex-col space-y-4 shadow-2xl justify-between bg-white rounded-xl w-1/3 h-2/5 text-center'>
                         <h2 className='text-6xl w-full h-full pt-8 m-auto rounded-t-xl bg-gradient-to-r from-yellow-300 via-red-400 to-pink-500'>🥳 🎉</h2>
                         <div className='font-body pb-10 text-lg leading-loose'>

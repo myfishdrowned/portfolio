@@ -27,7 +27,9 @@ const IndexPage = () => {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Justin Caovan | Front End Developer</title>
-          <link rel="canonical" href="https://www.justincaovan.com" />
+          <meta name="description" content="Personal portfolio website for Justin Caovan with his bio, projects and contact information" />
+          <link rel="canonical" href="https://justincaovan.com" />
+          <html lang="en" />
         </Helmet>
           {/* <Nav /> */}
           <Hero />

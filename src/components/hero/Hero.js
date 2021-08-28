@@ -78,15 +78,15 @@ const Hero = () => {
                         data-scroll-direction='horizontal'
                         data-scroll-speed='1'>FRONT &nbsp;</p>
                         <p
-                             data-scroll
-                             data-scroll-position='top'
-                             data-scroll-direction='vertical'
-                             data-scroll-speed='1'>END &nbsp;</p>
+                            data-scroll
+                            data-scroll-position='top'
+                            data-scroll-direction='vertical'
+                            data-scroll-speed='1'>END &nbsp;</p>
                         <p
-                             data-scroll
-                             data-scroll-position='top'
-                             data-scroll-direction='vertical'
-                             data-scroll-speed='-1'>DEVELOPER</p>
+                            data-scroll
+                            data-scroll-position='top'
+                            data-scroll-direction='vertical'
+                            data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
 
                 <motion.div className='absolute bottom-10 right-1/2 md:right-1/3 flex flex-col justify-center space-y-4 overflow-hidden'
