@@ -1,9 +1,6 @@
 import React from 'react'
-// import Bio from './Bio'
-// import Skills from './Skills'
-import loadable from '@loadable/component'
-const Bio = loadable(() => import('./Bio'));
-const Skills = loadable(() => import('./Skills'));
+import Bio from './Bio'
+import Skills from './Skills'
 
 const About = () => {
 

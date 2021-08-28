@@ -3,14 +3,11 @@ import ProjectCard from './ProjectCard'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { StaticImage } from 'gatsby-plugin-image'
-import loadable from '@loadable/component'
-// const ProjectCard = loadable(() => import('./ProjectCard'));
-
 
 const Portfolio = () => {
     const animation = useAnimation()
     const {ref, inView} = useInView({
-        threshold: 0.3
+        threshold: 0.2
     })
 
     useEffect(() => {
@@ -38,15 +35,14 @@ const Portfolio = () => {
                 initial='hidden' 
                 animate={animation} 
                 variants={list}>
-                <motion.div data-scroll data-scroll-sticky data-scroll-target='#container' variants={list}
-                    className='flex flex-row space-x-2 md:flex-col md:space-y-2 w-full md:w-1/4 h-full text-4xl font-display'>
-                        <p>Featured</p>
-                        <p className='md:ml-8'>Projects</p>
+                <motion.div className='flex flex-row space-x-2 md:flex-col md:space-y-2 w-full md:w-1/4 h-full text-4xl font-display'
+                data-scroll data-scroll-sticky data-scroll-target='#container' variants={list}>
+                    <p>Featured</p>
+                    <p className='md:ml-8'>Projects</p>
                 </motion.div>
 
-                <motion.div           
-                    className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
-                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='3' variants={list}>
+                <motion.div className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
+                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
                         <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
                         <ProjectCard
                             name= {'Bloom'}
@@ -56,7 +52,7 @@ const Portfolio = () => {
                             description = {'A single-page indoor plant e-commerce web application with a focus on front-end user interface. Users can add, modify, and remove items from their cart as well as filter products by category.'}
                         />
                     </motion.div>
-                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='3' variants={list}>
+                    <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
                         <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'Breezy'}

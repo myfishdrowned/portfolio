@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
-// import Modal from './Modal'
+import Modal from './Modal'
 import emailjs from 'emailjs-com'
-import loadable from '@loadable/component'
-const Modal = loadable(() => import('./Modal'));
 
 function ContactForm() {
     const [showModal, setShowModal] = useState(false);

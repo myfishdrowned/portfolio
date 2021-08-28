@@ -20,7 +20,7 @@ function Skills() {
             y: 0, opacity: 1,
             transition: {
                 staggerChildren: .15,
-                delayChildren: .2, 
+                delayChildren: .1, 
                 duration: 1,
             }
         },

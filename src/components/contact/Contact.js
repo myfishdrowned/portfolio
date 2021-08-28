@@ -5,8 +5,6 @@ import github from "../../images/github.svg"
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { navigate } from '@reach/router'
-// import loadable from '@loadable/component'
-// const ContactForm = loadable(() => import('./ContactForm'));
 
 const Contact = () => {
     const animation = useAnimation()

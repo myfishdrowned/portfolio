@@ -1,7 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from 'framer-motion'
 
-
 const Modal = ({ showModal, setShowModal}) => {
     const modal = {
         hidden: {opacity:0,},
