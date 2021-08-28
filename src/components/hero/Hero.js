@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
-// import Nav from '../nav/Nav'
+import Nav from '../nav/Nav'
 import NET from 'vanta/dist/vanta.net.min'
 import { motion } from "framer-motion"
 import * as THREE from 'three'
@@ -55,7 +55,7 @@ const Hero = () => {
       
     return (
         <div data-scroll-section ref={myRef}>
-            {/* <Nav /> */}
+            <Nav />
             <div className='relative justify-center text-light-green font-display h-screen w-screen flex flex-col space-y-6 2xl:space-y-12 px-20 2xl:px-64'>
                 <motion.h1
                     data-scroll

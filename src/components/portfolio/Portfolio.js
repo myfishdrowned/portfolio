@@ -43,7 +43,7 @@ const Portfolio = () => {
 
                 <motion.div className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
                     <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
-                        <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
+                        <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} placeholder='blurred' alt='Personal portfolio project'/>
                         <ProjectCard
                             name= {'Bloom'}
                             tags = { ['React', 'Redux', 'TailwindCSS'] }
@@ -53,7 +53,7 @@ const Portfolio = () => {
                         />
                     </motion.div>
                     <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
-                        <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
+                        <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} placeholder='blurred' alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'Breezy'}
                             tags = { ['React', 'TailwindCSS']}
