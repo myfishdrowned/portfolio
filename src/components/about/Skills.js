@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
-import {javascript, html, css, react, redux, gatsby, tailwind, webpack, graphql, npm, heroku, netlify} from '../../images/icons'
+import {javascript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify} from '../../images/icons'
 
 function Skills() {
     const animation = useAnimation()
@@ -52,10 +52,8 @@ function Skills() {
             <div className='flex flex-col w-full text-center md:w-3/4 space-y-24'>
                 <div className='font-body text-lg leading-loose text-left'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
-                        Experience in building modern web applications and components using React.js, Javascript (ES6), HTML3, and CSS3.
-
-                        - A willingness to explore and learn new technologies. 
-                        Currently learning Node.js and Express.js
+                        Experience in building modern web applications and user interface components using React.js, Javascript (ES6), HTML3, and CSS3.
+                        Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to my applications.
                     </motion.p>
                 </div>
                 <div className='flex flex-col md:flex-row space-y-12 md:space-y-0 md:space-x-8 md:divide-x divide-opacity-30 divide-graphite text-center justify-between'>
@@ -83,7 +81,7 @@ function Skills() {
                         <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 font-body justify-items-center text-sm pt-14'>
                             <motion.li variants={icons} className='icon'>{redux}Redux</motion.li>
                             <motion.li variants={icons} className='icon'>{webpack}Webpack</motion.li>
-                            <motion.li variants={icons} className='icon'>{graphql}GraphQL</motion.li>
+                            <motion.li variants={icons} className='icon'>{framer}Framer Motion</motion.li>
                             <motion.li variants={icons} className='icon'>{heroku}Heroku</motion.li>
                             <motion.li variants={icons} className='icon'>{netlify}Netlify</motion.li>
                             <motion.li variants={icons} className='icon'>{npm}npm</motion.li>

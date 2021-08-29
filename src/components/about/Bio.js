@@ -47,19 +47,12 @@ function Bio() {
                             About Me
                         </p>
                 </h1>
-                <motion.p className='font-body text-graphite leading-relaxed text-lg md:text-2xl md:leading-loose'
+                <motion.p className='font-display px-6 text-graphite leading-relaxed text-lg md:text-2xl md:leading-loose'
                 variants={list}>
-                    I'm a self-taught front end web developer based in Phoenix, Arizona.
-                    Passion for building intuitive, digital user interfaces across websites and applications.
-                    Continuously looking for ways to improve my craft by creating the best possible user experiences.
-                    
-                    {/* With a passion for building intuitive, digital user interfaces, I'm continuously looking for ways to improve my skills and knowledge as a developer. */}
-                    {/* Continuously looking to create and captivate through intuitive, something websites. */}
-
-                    {/* Kinesiology and Sports Medicine graduate turned self-taught front-end developer? */}
-                    {/* Enjoy the process of implementing and bringing ideas to life on screen. */}
-                    {/* Eager to learn new design concepts, technologies and tools - add to my skillset */}
-                    {/* Currently open to new opportunities?  */}
+                    I'm a self-taught front-end web developer based in Phoenix, Arizona
+                    who finds enjoyment in tinkering with and building seamless web applications.
+                    I'm constantly seeking opportunities to learn new concepts, technologies, and tools
+                    in order to create the best possible user experience.
                 </motion.p>
                 <motion.button className='bg-black bg-opacity-90 font-display text-light-green h-full w-max mt-8 p-4
                 hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500' 
