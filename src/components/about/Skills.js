@@ -53,7 +53,7 @@ function Skills() {
                 <div className='font-body text-lg leading-loose text-left'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
                         Experience in building modern web applications and user interface components using React.js, Javascript (ES6), HTML3, and CSS3.
-                        Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to my applications.
+                        Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.
                     </motion.p>
                 </div>
                 <div className='flex flex-col md:flex-row space-y-12 md:space-y-0 md:space-x-8 md:divide-x divide-opacity-30 divide-graphite text-center justify-between'>
