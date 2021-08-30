@@ -37,7 +37,7 @@ function Bio() {
                     animate={animation} 
                     variants={list}>
                 <h1 
-                    className='my-8 md:my-0 md:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
+                    className='my-8 md:my-0 md:-ml-22 lg:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
                     rounded-full h-24 w-24 flex items-center justify-center cursor-default'
                     data-scroll
                     data-scroll-direction='vertical'
@@ -48,7 +48,7 @@ function Bio() {
                 </h1>
                 <motion.p className='font-display px-6 text-graphite leading-relaxed text-lg md:text-2xl md:leading-loose'
                 variants={list}>
-                    I'm a self-taught front-end web developer based in Phoenix, Arizona
+                    I'm a self-taught front end web developer based in Phoenix, Arizona
                     who finds enjoyment in tinkering with and building intuitive web applications.
                     I'm constantly seeking opportunities to learn new concepts, technologies, and tools
                     in order to create the best possible user experience.

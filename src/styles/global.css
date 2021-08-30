@@ -5,7 +5,7 @@
 @layer components {
 
     .icon {
-        @apply transform hover:scale-125 duration-200
+        @apply transform hover:-translate-y-2 ease-in-out duration-200
     }
 }
 

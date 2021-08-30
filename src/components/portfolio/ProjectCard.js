@@ -5,7 +5,7 @@ import demo from '../../images/demo.svg'
 function ProjectCard(prop) {
     let tags = prop.tags.map(tag => 
         <li 
-            className='px-2 py-1 text-sm border bg-graphite bg-opacity-10 border-graphite border-opacity-20 rounded-full cursor-default 
+            className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default 
             transition transform duration-400 ease-in-out hover:scale-110'>
             {tag}
         </li>

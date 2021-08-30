@@ -89,7 +89,7 @@ const Hero = () => {
                             data-scroll-speed='-1'>DEVELOPER</p>
                 </motion.div>
 
-                <motion.div className='absolute bottom-10 right-1/2 md:right-1/3 flex flex-col justify-center space-y-4 overflow-hidden'
+                <motion.div className='absolute bottom-16 md:bottom-10 right-1/2 md:right-1/3 flex flex-col justify-center space-y-4 overflow-hidden'
                     initial='hidden'
                     animate='visible'
                     variants={container}>
@@ -99,7 +99,7 @@ const Hero = () => {
                     </motion.svg>
                 </motion.div> 
 
-                <motion.div className='absolute bottom-10 right-10 flex flex-col space-y-2'
+                <motion.div className='absolute bottom-16 right-10 md:bottom-10 md:right-10 flex flex-col space-y-2'
                     initial='hidden'
                     animate='visible'
                     variants={container}>

@@ -41,14 +41,11 @@ I wanted to use this project to not only display my projects and current skills 
 * Testing the website on multiple devices and figuring out how to make the site responsive.
 
 ## Reflection
-This project took me much longer than expected. Planning and creating a cohesive design probably took the longest amount of time for me. I spent
-hours looking at other developer's portfolio websites to get a general idea of what I should include and what looks good. I knew I wanted a clean,
-minimalist website but I was unhappy with many of my initial layouts. Overall, it was a great test of my design and styling skills. It was my first
-real attempt at making a website truly responsive and I'm happy with how it turned out.
-
-I really enjoyed working with Gatsby for this project. The development process was smooth and it was easy to optimize my website when I was looking to
-increase my Lighthouse scores. I believe if I 
+This project took me much longer than expected. Planning and creating a cohesive design probably took the longest amount of time for me. I spent hours looking at other developer's portfolio websites to get a general idea of what I should include and what looks good. I knew I wanted a clean, minimalist website but I was unhappy with many of my initial layouts. Overall, it was a great test of my design and styling skills. It was my first real attempt at making a website truly responsive and I'm happy with how it turned out.  
+  
+I really enjoyed working with Gatsby for this project. The development process was smooth and it was easy to optimize my website when I was looking to increase my Lighthouse scores. I believe if I only used React, my performance scores would have taken a massive hit. There was a small learning curve figuring out concepts like utilizing Gatsby plugins or importing global CSS but the documentation is well written and informative.  
+  
+Using Vanilla Javascript libraries was a pain when attempting to implement them into React. This was another time-sink as libraries like GSAP/Scroll Trigger, Locomotive Scroll, VantaJS all required special fine tuning when using with React. Documentation wasn't well covered so it took quite some time to figure out which libraries I wanted to use. 
 
 
-There was a small learning curve figuring out how to utilize Gatsby plugins and importing
-CSS through gatsby-browser.
+![Screen Shot 2021-08-29 at 5 50 19 PM](https://user-images.githubusercontent.com/61437879/131418365-42fcebd3-61b0-41da-9b81-23090a8cf7f8.png)
