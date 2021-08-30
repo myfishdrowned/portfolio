@@ -33,9 +33,22 @@ I wanted to use this project to not only display my projects and current skills 
 * EmailJS (for client-side form submission)
 
 ## Challenges
-* Exploring which libraries I wanted to use and which could be easily implemented in React (GSAP and ScrollTrigger, several scroll libraries)
-* Designing, creating and executing an appealing website - ended up changing the design several times.
-* Finding possible design inspirations and researching how to implement the functionality in my own site.
 * Learning how to use Framer Motion and Locomotive Scroll to create smooth scroll-based animations - first time using extensive animations and smooth scrolling in any websites I've built.
+* Creating an overall design for the website - ended up changing the design and technology stack several times.
+* Looking for possible design inspirations and researching how to implement the same functionality in my own site.
+* Researching and comparing different tools, technologies, and libraries that ran well with React (GSAP vs Framer Motion, Next vs Gatsby, SASS vs Tailwind, different scroll libraries)
+* Learning how to optimize my website for a better Lighthouse performance, accessibility, SEO and best practice scores.
+* Testing the website on multiple devices and figuring out how to make the site responsive.
 
 ## Reflection
+This project took me much longer than expected. Planning and creating a cohesive design probably took the longest amount of time for me. I spent
+hours looking at other developer's portfolio websites to get a general idea of what I should include and what looks good. I knew I wanted a clean,
+minimalist website but I was unhappy with many of my initial layouts. Overall, it was a great test of my design and styling skills. It was my first
+real attempt at making a website truly responsive and I'm happy with how it turned out.
+
+I really enjoyed working with Gatsby for this project. The development process was smooth and it was easy to optimize my website when I was looking to
+increase my Lighthouse scores. I believe if I 
+
+
+There was a small learning curve figuring out how to utilize Gatsby plugins and importing
+CSS through gatsby-browser.
