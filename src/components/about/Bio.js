@@ -32,17 +32,16 @@ function Bio() {
 
     return(
         <div ref={ref} className='mb-20 text-center h-full overflow-hidden'>
-            <motion.div 
+            <motion.div className='m-auto w-11/12 md:w-3/4 max-w-3xl'
                     initial='hidden' 
                     animate={animation} 
-                    variants={list}
-                    className='m-auto w-3/4 max-w-2xl'>
+                    variants={list}>
                 <h1 
+                    className='my-8 md:my-0 md:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
+                    rounded-full h-24 w-24 flex items-center justify-center cursor-default'
                     data-scroll
                     data-scroll-direction='vertical'
-                    data-scroll-speed='-3'
-                    className='my-8 md:my-0 md:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
-                    rounded-full h-24 w-24 flex items-center justify-center cursor-default'>
+                    data-scroll-speed='-3'>
                         <p className='tracking-wide transform transition duration-200 hover:scale-110 hover:tracking-wider hover:text-yellow-500'>
                             About Me
                         </p>

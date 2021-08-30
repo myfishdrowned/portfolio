@@ -22,8 +22,8 @@ function ContactForm() {
         <>
             <form className='flex flex-col h-full space-y-8 leading-loose tracking-wide' onSubmit={sendEmail}>
                 <div className='flex space-x-4'>
-                    <input type='text' name='name' placeholder='Your name' required className='bg-light-green border-2 w-1/2 rounded'/>
-                    <input type='email' name='email' placeholder='Your email' required className='bg-light-green w-1/2 rounded'/>
+                    <input type='text' name='name' placeholder='Your name' required className='bg-light-green border-2 w-1/2 h-full rounded'/>
+                    <input type='email' name='email' placeholder='Your email' required className='bg-light-green w-1/2 h-full rounded'/>
                 </div>
                 <input type='text' name='subject' placeholder='Subject' className='bg-light-green rounded'/>
                 <textarea name='message' placeholder='Your message...' required className='bg-light-green h-2/3 rounded'/>

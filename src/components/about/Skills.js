@@ -42,7 +42,8 @@ function Skills() {
     }
 
     return(
-        <div ref={ref} className='flex flex-col md:flex-row space-y-8 md:space-y-0 w-3/4 py-12 md:py-24 mx-8 my-0 md:m-auto md:my-4'>
+        <div ref={ref} className='flex flex-col max-w-6xl md:flex-row space-y-8 md:space-y-0 
+            w-3/4 py-12 md:py-24 mx-8 my-0 md:m-auto md:my-4'>
             <div className='w-full text-center md:text-left md:w-1/4'>
                 <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>
                     Skills
@@ -50,7 +51,7 @@ function Skills() {
             </div>
 
             <div className='flex flex-col w-full text-center md:w-3/4 space-y-24'>
-                <div className='font-body text-lg leading-loose text-left'>
+                <div className='font-body md:text-lg leading-loose text-center md:text-left'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
                         Experience in building modern web applications and user interface components using React.js, Javascript (ES6), HTML3, and CSS3.
                         Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.

@@ -34,12 +34,12 @@ const Contact = () => {
 
     return (
         <div ref={ref} data-scroll-section className='bg-graphite text-center h-full w-screen pb-12 pt-24 mt-12'>
-            <motion.div id='contact' className='w-5/6 md:w-4/5 h-full m-auto pt-10'
+            <motion.div id='contact' className='w-5/6 md:w-4/5 max-w-7xl h-full m-auto pt-10'
                 initial='hidden'
                 animate={animation}
                 variants={list}>
                 <div className='flex flex-col lg:flex-row md:text-left align-start h-full lg:space-x-16'>
-                    <div className='flex flex-col space-y-12 w-full lg:w-1/2 mb-12 lg:mb-0 p-12 h-full bg-light-green text-graphite'>
+                    <div className='flex flex-col space-y-12 w-full lg:w-1/2 mb-12 lg:mb-0 px-6 py-12 md:p-12 h-full bg-light-green text-graphite'>
                         <h2 className='font-display text-4xl'>
                             Say Hi!
                         </h2>
