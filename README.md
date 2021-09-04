@@ -47,5 +47,8 @@ I really enjoyed working with Gatsby for this project. The development process w
   
 Using Vanilla Javascript libraries was a pain when attempting to implement them into React. This was another time-sink as libraries like GSAP/Scroll Trigger, Locomotive Scroll, VantaJS all required special fine tuning when using with React. Documentation wasn't well covered so it took quite some time to figure out which libraries I wanted to use. 
 
+## Screenshots
 
+### Lighthouse 
 ![Screen Shot 2021-08-29 at 5 50 19 PM](https://user-images.githubusercontent.com/61437879/131418365-42fcebd3-61b0-41da-9b81-23090a8cf7f8.png)
+

@@ -35,7 +35,7 @@ const Portfolio = () => {
                 initial='hidden' 
                 animate={animation} 
                 variants={list}>
-                <motion.div className='flex flex-row space-x-2 md:flex-col md:space-y-2 w-full md:w-1/4 h-full text-4xl font-display'
+                <motion.div className='flex flex-row space-x-2 m-auto md:m-0 md:flex-col md:space-y-2 w-full md:w-1/4 h-full text-4xl font-display'
                 data-scroll data-scroll-sticky data-scroll-target='#container' variants={list}>
                     <p>Featured</p>
                     <p className='md:ml-8'>Projects</p>
