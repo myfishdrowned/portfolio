@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.justincaovan.com",
     title: "Justin Caovan | Front End Developer",
-    description: "Personal portfolio website for Justin Caovan with contact information, personal projects, and biography",
+    description: "Justin Caovan's Personal Portfolio Website",
     author: "Justin Caovan"
   },
   plugins: ["gatsby-plugin-gatsby-cloud",
