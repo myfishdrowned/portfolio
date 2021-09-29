@@ -46,7 +46,7 @@ const Portfolio = () => {
                         <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
                         <ProjectCard
                             name= {'Bloom'}
-                            tags = { ['React', 'Redux', 'TailwindCSS'] }
+                            tags = { ['JavaScript', 'React', 'Redux', 'TailwindCSS'] }
                             liveDemo = { 'https://bloom-shopping-cart.herokuapp.com/' }
                             github = { 'https://github.com/jtcaovan/shopping-cart' }
                             description = {'A single-page indoor plant e-commerce web application with a focus on front-end user interface. Users can add, modify, and remove items from their cart as well as filter products by category.'}
@@ -56,7 +56,7 @@ const Portfolio = () => {
                         <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'Breezy'}
-                            tags = { ['React', 'TailwindCSS']}
+                            tags = { ['JavaScript', 'React', 'TailwindCSS']}
                             github = {'https://github.com/jtcaovan/WeatherApp'}
                             liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
                             description = { 'A widget-style weather application that displays the current weather, forecast, and details of over 200,000 cities in the world. Weather data is fetched using OpenWeather API. So simple and easy to use, it\'s Breezy.'}
