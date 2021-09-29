@@ -19,7 +19,8 @@ function Bio() {
         visible: {
             y: 0,
             opacity: 1,
-            staggerChildren: .2,
+            staggerChildren: 1,
+            delayChildren: 1,
             transition: {
                 duration: 1.5, 
            }
@@ -36,26 +37,37 @@ function Bio() {
                     initial='hidden' 
                     animate={animation} 
                     variants={list}>
-                <h1 
-                    className='my-8 md:my-0 md:-ml-22 lg:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
+                <div className='my-8 md:my-0 md:-ml-22 lg:-ml-36 md:mt-8 bg-black bg-opacity-90 font-display text-light-green 
                     rounded-full h-24 w-24 flex items-center justify-center cursor-default'
                     data-scroll
                     data-scroll-direction='vertical'
-                    data-scroll-speed='-3'>
-                        <p className='tracking-wide transform transition duration-200 hover:scale-110 hover:tracking-wider hover:text-yellow-500'>
-                            About Me
-                        </p>
-                </h1>
-                <motion.p className='font-display px-6 text-graphite leading-relaxed text-lg md:text-2xl md:leading-loose'
+                    data-scroll-speed='-4'>
+                    <p className='tracking-wide transform transition duration-200 hover:scale-110 hover:tracking-wider hover:text-yellow-500'>
+                        About Me
+                    </p>
+                </div>
+                <motion.div className='font-display px-12 text-graphite'
                 variants={list}>
-                    I'm a front end web developer based in Phoenix, Arizona
-                    who finds enjoyment in tinkering with and building intuitive web applications.
-                    I'm constantly seeking opportunities to learn new concepts, technologies, and tools
-                    in order to create the best possible user experience.
-                </motion.p>
-                <motion.button className='bg-black bg-opacity-90 font-display text-light-green h-full w-max mt-8 p-4
-                hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500' 
-                onClick ={()=> {navigate('#contact')}}>Get In Touch</motion.button>
+                    {/* <motion.p className='md:pb-8 md:-mt-14 text-xl md:text-4xl'
+                        variants={list}>
+                        Hi, I'm Justin!
+                    </motion.p> */}
+                    <motion.p className='text-lg md:text-xl text-justify tracking-tight leading-relaxed md:leading-loose'
+                        variants={list}>
+                        I'm a Front End Developer with a background in Sports Medicine.
+                        Transitioning to the world of web development, I love the creative process of 
+                        building visually appealing designs and interactive user interfaces. 
+                        I'm constantly seeking opportunities to learn new concepts, technologies, and tools
+                        in order to create the best possible user experience. Outside of coding, I'm an amateur rock climber,
+                        a semi-professional pitcher of crumpled paper balls for my cat Mango, and an avid reader of
+                        fantasy books.
+
+                    </motion.p>
+                    <motion.button className='bg-black bg-opacity-90 text-light-green h-full w-max mt-8 p-4
+                    hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500'
+                    variants={list}
+                    onClick ={()=> {navigate('#contact')}}>Get In Touch</motion.button>
+                </motion.div>
             </motion.div>
         </div>
     )
