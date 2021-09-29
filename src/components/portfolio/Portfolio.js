@@ -62,6 +62,17 @@ const Portfolio = () => {
                             description = { 'A widget-style weather application that displays the current weather, forecast, and details of over 200,000 cities in the world. Weather data is fetched using OpenWeather API. So simple and easy to use, it\'s Breezy.'}
                         /> 
                     </div>
+                    <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
+                        <StaticImage className='mb-4' src={''} alt='Personal portfolio project'/>
+                        <ProjectCard 
+                            name = {'The Odin Project'}
+                            tags = { ['Open Source Contribution']}
+                            github = {'https://github.com/TheOdinProject/curriculum'}
+                            liveDemo = {'https://www.theodinproject.com/'}
+                            description = { ''}
+                        /> 
+                    </div>
+
                 </div>
             </motion.div>
         </div>
