@@ -63,13 +63,13 @@ const Portfolio = () => {
                         /> 
                     </div>
                     <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
-                        <StaticImage className='mb-4' src={''} alt='Personal portfolio project'/>
+                        <StaticImage className='mb-4' src={'../../images/screenShots/odin.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'The Odin Project'}
-                            tags = { ['Open Source Contribution']}
+                            tags = { ['Open Source Contributor']}
                             github = {'https://github.com/TheOdinProject/curriculum'}
                             liveDemo = {'https://www.theodinproject.com/'}
-                            description = { ''}
+                            description = { 'The Odin Project is a free, open source, full stack coding curriculum. I contributed to the curriculum, updating the content for future students.' }
                         /> 
                     </div>
 
