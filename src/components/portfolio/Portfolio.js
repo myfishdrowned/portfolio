@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import ProjectCard from './ProjectCard'
 import { motion, useAnimation } from 'framer-motion'
+import Tilt from 'react-parallax-tilt'
 import { useInView } from 'react-intersection-observer'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -43,7 +44,9 @@ const Portfolio = () => {
 
                 <div className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
                     <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
-                        <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
+                        <Tilt tiltReverse={true}>
+                            <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
+                        </Tilt>
                         <ProjectCard
                             name= {'Bloom'}
                             tags = { ['JavaScript', 'React', 'Redux', 'TailwindCSS'] }
@@ -53,7 +56,9 @@ const Portfolio = () => {
                         />
                     </motion.div>
                     <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
-                        <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
+                    <Tilt tiltReverse={true}>
+                            <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
+                        </Tilt>
                         <ProjectCard 
                             name = {'Breezy'}
                             tags = { ['JavaScript', 'React', 'TailwindCSS']}
@@ -63,7 +68,9 @@ const Portfolio = () => {
                         /> 
                     </div>
                     <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
-                        <StaticImage className='mb-4' src={'../../images/screenShots/odin.png'} alt='Personal portfolio project'/>
+                        <Tilt tiltReverse={true}>
+                            <StaticImage className='mb-4' src={'../../images/screenShots/odin.png'} alt='Personal portfolio project'/>
+                        </Tilt>
                         <ProjectCard 
                             name = {'The Odin Project'}
                             tags = { ['Open Source Contributor']}
