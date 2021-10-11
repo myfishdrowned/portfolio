@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
-import {javascript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify} from '../../images/icons'
+import {javascript, typescript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify} from '../../images/icons'
 
 function Skills() {
     const animation = useAnimation()
@@ -53,7 +53,7 @@ function Skills() {
             <div className='flex flex-col w-full text-center lg:w-3/4 space-y-24'>
                 <div className='font-body lg:text-lg leading-loose lg:leading-loose text-center lg:text-left'>
                     <motion.p initial='hidden' animate={animation} variants={header}>
-                        Experience in building modern web applications and user interface components using React.js, Javascript (ES6), HTML5, and CSS3.
+                        Experience in building modern web applications and user interface components using React.js, Javascript (ES6), TypeScript, HTML5, and CSS3.
                         Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.
                     </motion.p>
                 </div>
@@ -67,6 +67,7 @@ function Skills() {
                             <motion.li variants={icons} className='icon'>{html} HTML5</motion.li>
                             <motion.li variants={icons} className='icon'>{css} CSS3</motion.li>
                             <motion.li variants={icons} className='icon'>{javascript}JavaScript</motion.li>
+                            <motion.li variants={icons} className='icon'>{typescript}TypeScript</motion.li>
                             <motion.li variants={icons} className='icon'>{react}React</motion.li>
                             <motion.li variants={icons} className='icon'>{gatsby}Gatsby</motion.li>
                             <motion.li variants={icons} className='icon'>{tailwind}Tailwind</motion.li>
