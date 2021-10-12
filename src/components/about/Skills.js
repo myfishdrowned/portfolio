@@ -42,22 +42,18 @@ function Skills() {
     }
 
     return(
-        <div ref={ref} className='flex flex-col max-w-6xl lg:flex-row space-y-8 lg:space-y-0 
-            w-3/4 py-12 lg:py-24 m-auto my-0 lg:m-auto lg:my-4'>
-            <div className='w-full text-center lg:text-left lg:w-1/4'>
-                <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl'>
+        <div ref={ref} className='flex flex-col max-w-6xl space-y-12 lg:space-y-24  w-3/4 py-12 lg:py-24 m-auto my-0 lg:m-auto lg:my-4'>
+            <div className='flex flex-col lg:flex-row lg:justify-between space-y-6 lg:space-y-0 w-full text-center lg:text-left m-auto'>
+                <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl lg:w-1/4'>
                     Skills
                 </motion.h1>
+                <motion.p initial='hidden' animate={animation} variants={header} className='font-body lg:text-lg leading-loose lg:leading-loose lg:w-3/4'>
+                        Experienced in building modern web applications and reusable user interface components using React.js, Javascript (ES6), TypeScript, HTML5, and CSS3.
+                        Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.
+                </motion.p>
             </div>
 
-            <div className='flex flex-col w-full text-center lg:w-3/4 space-y-24'>
-                <div className='font-body lg:text-lg leading-loose lg:leading-loose text-center lg:text-left'>
-                    <motion.p initial='hidden' animate={animation} variants={header}>
-                        Experience in building modern web applications and user interface components using React.js, Javascript (ES6), TypeScript, HTML5, and CSS3.
-                        Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.
-                    </motion.p>
-                </div>
-                <div className='flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 lg:divide-x divide-opacity-30 divide-graphite text-center justify-between'>
+                <div className='flex flex-col w-full text-center space-y-24 lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 lg:divide-x divide-opacity-30 divide-graphite text-center justify-between'>
                     <motion.div className='w-full lg:w-1/2'           
                         initial='hidden'
                         animate={animation}
@@ -88,7 +84,6 @@ function Skills() {
                         </motion.ul>
                     </motion.div>
                 </div>
-            </div>
         </div>
     )
 }
