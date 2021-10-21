@@ -49,7 +49,7 @@ const Contact = () => {
                         </p>
                         <button className='m-auto md:m-0 md:text-left bg-black bg-opacity-90 font-body text-light-green h-full w-max mt-6 p-4
                         hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500'>
-                        <a href="https://drive.google.com/file/d/13niOqjA5MnqKckzt6TefUT-_QZJZYkDk/view?usp=sharing" 
+                        <a href="https://drive.google.com/file/d/1IT9ezAw8anGpLbFhB6yIcVqHtOpKqDZb/view?usp=sharing" 
                             target='_blank'
                             rel="noopener noreferrer">
                             View Resume</a>
