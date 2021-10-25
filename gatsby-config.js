@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.justincaovan.com",
     title: "Justin Caovan | Front End Developer",
-    description: "Justin Caovan's Personal Portfolio Website",
-    author: "Justin Caovan"
+    description: "Justin Caovan is a front end developer who loves creating seamless, intuitive, and beautiful digital experiences.",
+    author: "Justin Caovan",
+    image: "src/images/home.png"
   },
   plugins: ["gatsby-plugin-gatsby-cloud",
   'gatsby-plugin-postcss',
