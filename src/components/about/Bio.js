@@ -48,17 +48,13 @@ function Bio() {
                 </div>
                 <motion.div className='font-display px-12 text-graphite'
                 variants={list}>
-                    {/* <motion.p className='md:pb-8 md:-mt-14 text-xl md:text-4xl'
-                        variants={list}>
-                        Hi, I'm Justin!
-                    </motion.p> */}
                     <motion.p className='text-lg md:text-xl text-justify tracking-tight leading-relaxed md:leading-loose'
                         variants={list}>
                         I'm a Front End Developer based out of Phoenix, Arizona.
                         I love the creative process of 
                         building visually appealing designs and interactive user interfaces. 
                         I'm constantly seeking opportunities to learn new concepts, technologies, and tools
-                        in order to create the best possible user experience. Outside of coding, I'm an amateur rock climber,
+                        to create the best possible user experience. Outside of coding, I'm an amateur rock climber,
                         a semi-professional pitcher of crumpled paper balls for my cat Mango, and an avid reader of
                         fantasy books.
 
