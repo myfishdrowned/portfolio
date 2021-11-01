@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import ProjectCard from './ProjectCard'
 import { motion, useAnimation } from 'framer-motion'
-import Tilt from 'react-parallax-tilt'
 import { useInView } from 'react-intersection-observer'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -44,42 +43,38 @@ const Portfolio = () => {
 
                 <div className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
                     <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
-                        <Tilt tiltReverse={true}>
-                            <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
-                        </Tilt>
+                        <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
                         <ProjectCard
                             name= {'Bloom'}
                             tags = { ['JavaScript', 'React', 'Redux', 'TailwindCSS'] }
                             liveDemo = { 'https://bloom-shopping-cart.herokuapp.com/' }
                             github = { 'https://github.com/jtcaovan/shopping-cart' }
+                            alt = {'Screenshot of Bloom, an indoor plant e-commerce web application'}
                             description = {'An indoor plant e-commerce frontend web application with a fully functioning shopping cart, product detail pages, and clean landing page. Users can add, modify, and remove items from their cart as well as filter products by category. Utilized React Router for seamless navigation throughout the site.'}
                         />
                     </motion.div>
                     <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
-                    <Tilt tiltReverse={true}>
-                            <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
-                        </Tilt>
+                        <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'Breezy'}
                             tags = { ['JavaScript', 'React', 'TailwindCSS']}
                             github = {'https://github.com/jtcaovan/WeatherApp'}
                             liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
+                            alt = {'Screenshot of Breezy, a weather application.'}
                             description = { 'A widget-style weather application that displays the current weather, forecast, and details of over 200,000 cities in the world. Weather data is fetched using OpenWeather API. So simple and easy to use, it\'s Breezy.'}
                         /> 
                     </div>
                     <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
-                        <Tilt tiltReverse={true}>
-                            <StaticImage className='mb-4' src={'../../images/screenShots/odin.png'} alt='Personal portfolio project'/>
-                        </Tilt>
+                        <StaticImage className='mb-4' src={'../../images/screenShots/odin.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'The Odin Project'}
                             tags = { ['Open Source Contributor']}
                             github = {'https://github.com/TheOdinProject/curriculum'}
                             liveDemo = {'https://www.theodinproject.com/'}
-                            description = { 'The Odin Project is a free, open source, full stack coding curriculum. I contributed to the curriculum, updating the content for future students.' }
+                            alt = {'Image of The Odin Project, a free, open-source coding curriculum'}
+                            description = { 'The Odin Project is a free, open-source, full stack coding curriculum. I contributed to the curriculum, updating the content for future students.' }
                         /> 
                     </div>
-
                 </div>
             </motion.div>
         </div>
