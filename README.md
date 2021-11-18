@@ -26,7 +26,7 @@ I wanted to use this project to not only display my projects and current skills 
 ## Development Stack and Libraries
 * GatsbyJS
 * TailwindCSS 
-* Framer Motion (animation library for React)
+* Framer Motion (animation library for React) + Intersection Observer API
 * Locomotive Scroll (smooth scroll libary)
 * VantaJS (landing page animation)
 * EmailJS (for client-side form submission)
