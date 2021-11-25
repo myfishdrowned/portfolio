@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
-import {javascript, typescript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify} from '../../images/icons'
+import {javascript, typescript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify, git} from '../../images/icons'
 
 function Skills() {
     const animation = useAnimation()
@@ -48,7 +48,7 @@ function Skills() {
                     Skills
                 </motion.h1>
                 <motion.p initial='hidden' animate={animation} variants={header} className='font-body lg:text-lg leading-loose lg:leading-loose lg:w-3/4'>
-                        Experienced in building modern web applications and reusable user interface components using React.js, Javascript (ES6), TypeScript, HTML5, and CSS3.
+                        Experienced in building modern web applications and reusable user interface components using React.js, Javascript (ES6), TypeScript, HTML5, SASS/SCSS, CSS3.
                         Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.
                 </motion.p>
             </div>
@@ -81,6 +81,7 @@ function Skills() {
                         <motion.li variants={icons} className='icon'>{heroku}Heroku</motion.li>
                         <motion.li variants={icons} className='icon'>{netlify}Netlify</motion.li>
                         <motion.li variants={icons} className='icon'>{npm}npm</motion.li>
+                        <motion.li variants={icons} className='icon'>{git}git</motion.li>
                     </motion.ul>
                 </motion.div>
             </div>
