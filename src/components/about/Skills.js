@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
-import {javascript, typescript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify, git} from '../../images/icons'
+import {javascript, typescript, html, css, react, redux, gatsby, tailwind, webpack, framer, npm, heroku, netlify, git, sass, figma} from '../../images/icons'
 
 function Skills() {
     const animation = useAnimation()
@@ -67,6 +67,7 @@ function Skills() {
                         <motion.li variants={icons} className='icon'>{react}React</motion.li>
                         <motion.li variants={icons} className='icon'>{gatsby}Gatsby</motion.li>
                         <motion.li variants={icons} className='icon'>{tailwind}Tailwind</motion.li>
+                        <motion.li variants={icons} className='icon'>{sass}Sass</motion.li>
                     </motion.ul>
                 </motion.div>
                 <motion.div className='w-full lg:w-1/2'
@@ -82,6 +83,7 @@ function Skills() {
                         <motion.li variants={icons} className='icon'>{netlify}Netlify</motion.li>
                         <motion.li variants={icons} className='icon'>{npm}npm</motion.li>
                         <motion.li variants={icons} className='icon'>{git}git</motion.li>
+                        <motion.li variants={icons} className='icon'>{figma}Figma</motion.li>
                     </motion.ul>
                 </motion.div>
             </div>

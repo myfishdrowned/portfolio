@@ -43,6 +43,17 @@ const Portfolio = () => {
 
                 <div className='flex flex-col space-y-20 md:space-y-0 w-full md:w-3/4 h-full text-center'>
                     <motion.div data-scroll data-scroll-delay='.1' data-scroll-speed='5' variants={list}>
+                            <StaticImage className='mb-4' src={'../../images/screenShots/preview.jpg'} alt='Personal portfolio project'/>
+                            <ProjectCard 
+                                name = {'devfinder'}
+                                tags = { ['TypeScript', 'React', 'SASS', 'GitHubAPI']}
+                                github = {'https://github.com/jtcaovan/github-user-search'}
+                                liveDemo = {'https://github.com/jtcaovan/github-user-search'}
+                                alt = {'Image of devfinder'}
+                                description = { 'Coming Soon...' }
+                            /> 
+                    </motion.div>
+                    <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
                         <StaticImage className='mb-4' src={'../../images/screenShots/bloom.png'} alt='Personal portfolio project'/>
                         <ProjectCard
                             name= {'Bloom'}
@@ -52,12 +63,12 @@ const Portfolio = () => {
                             alt = {'Screenshot of Bloom, an indoor plant e-commerce web application'}
                             description = {'An indoor plant e-commerce frontend web application with a fully functioning shopping cart, product detail pages, and clean landing page. Users can add, modify, and remove items from their cart as well as filter products by category. Utilized React Router for seamless navigation throughout the site.'}
                         />
-                    </motion.div>
+                    </div>
                     <div data-scroll data-scroll-delay='.1' data-scroll-speed='5'>
                         <StaticImage className='mb-4' src={'../../images/screenShots/weather.png'} alt='Personal portfolio project'/>
                         <ProjectCard 
                             name = {'Breezy'}
-                            tags = { ['JavaScript', 'React', 'TailwindCSS']}
+                            tags = { ['JavaScript', 'React', 'TailwindCSS', 'OpenWeatherAPI']}
                             github = {'https://github.com/jtcaovan/WeatherApp'}
                             liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
                             alt = {'Screenshot of Breezy, a weather application.'}
