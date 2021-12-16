@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
     .icon {
         @apply transform hover:-translate-y-2 ease-in-out duration-200
     }
