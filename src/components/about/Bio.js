@@ -50,13 +50,15 @@ function Bio() {
                 variants={list}>
                     <motion.p className='text-lg md:text-xl text-justify tracking-tight leading-relaxed md:leading-loose'
                         variants={list}>
-                        I'm a Front End Developer based out of Phoenix, Arizona.
-                        I love the creative process of 
-                        building visually appealing designs and interactive user interfaces. 
-                        I'm constantly seeking opportunities to learn new concepts, technologies, and tools
-                        to create the best possible user experience. Outside of coding, I'm an amateur rock climber,
-                        a semi-professional pitcher of crumpled paper balls for my cat Mango, and an avid reader of
-                        fantasy books.
+                        Experienced Identity and Access Management (IAM) professional with a strong background in the design, development, and deployment of SailPoint IdentityIQ and IdentityNow solutions across on-premises and cloud environments. Proven expertise in implementing and configuring key SailPoint modules, including Application Onboarding, Compliance, and Lifecycle Management (LCM).
+
+                        Skilled in integrating and deploying SailPoint products in client environments, with hands-on experience developing provisioning rules to manage user account operations such as creation, deletion, enabling, and disabling. Adept at customizing and configuring provisioning and deprovisioning workflows across internal and external systems.
+
+                        Experienced in configuring data aggregation from applications such as Active Directory, LDAP, and Delimited Files. Proficient in maintaining and refreshing Identity Cubes to enforce roles and policies. Familiar with designing and executing Joiner-Mover-Leaver (JML) workflows to automate identity lifecycle processes.
+
+                        Strong knowledge of Role-Based Access Control (RBAC), entitlement management, and role mining. Proficient in Single Sign-On (SSO), identity provisioning, certification campaigns, and access governance. Skilled in writing complex SQL queries, stored procedures, and managing data imports/exports.
+
+                        Passionate about building secure, scalable identity infrastructures that support organizational compliance and user experience goals.
 
                     </motion.p>
                     <motion.button className='bg-black bg-opacity-90 text-light-green h-full w-max mt-8 p-4

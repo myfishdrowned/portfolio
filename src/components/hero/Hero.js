@@ -76,17 +76,12 @@ const Hero = () => {
                         data-scroll
                         data-scroll-position='top'
                         data-scroll-direction='horizontal'
-                        data-scroll-speed='1'>FRONT &nbsp;</p>
+                        data-scroll-speed='1'>IAM &nbsp;</p>
                         <p
                             data-scroll
                             data-scroll-position='top'
                             data-scroll-direction='vertical'
-                            data-scroll-speed='1'>END &nbsp;</p>
-                        <p
-                            data-scroll
-                            data-scroll-position='top'
-                            data-scroll-direction='vertical'
-                            data-scroll-speed='-1'>DEVELOPER</p>
+                            data-scroll-speed='1'>ENGINEER</p>
                 </motion.div>
 
                 <motion.div className='absolute bottom-16 md:bottom-10 right-1/2 md:right-1/3 flex flex-col justify-center space-y-4 overflow-hidden'
@@ -106,17 +101,17 @@ const Hero = () => {
                         <motion.div 
                             variants={icon}
                             className='bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Github' src={github}/></a>
+                            <a href='https://github.com/myfishdrowned' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Github' src={github}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95'>
-                            <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='LinkedIn' src={linkedIn}/></a>
+                            <a href='https://www.linkedin.com/in/srm19/' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='LinkedIn' src={linkedIn}/></a>
                         </motion.div>
                         <motion.div 
                             variants={icon}
                             className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='mailto:your-email@example.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Gmail' src={gmail}/> </a>
+                            <a href='mailto:saif.rahman.va@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Gmail' src={gmail}/> </a>
                         </motion.div>
                 </motion.div>
             </div>        

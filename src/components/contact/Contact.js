@@ -47,25 +47,19 @@ const Contact = () => {
                             Currently open for new opportunities or people to share ideas with! 
                             For any other information about me or my work, feel free to reach out!
                         </p>
-                        <button className='m-auto md:m-0 md:text-left bg-black bg-opacity-90 font-body text-light-green h-full w-max mt-6 p-4
-                        hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200 shadow-2xl hover:text-yellow-500'>
-                        <a href="https://drive.google.com/file/d/16CGuiY7Ln3xGhMZlXFlBu9gdbsaA3vV3/view?usp=sharing" 
-                            target='_blank'
-                            rel="noopener noreferrer">
-                            View Resume</a>
-                        </button>
+
                         <div className='flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between'>
                             <div className='flex flex-col'>
                                 <p>Contact me at</p>
-                                <a href='mailto:your-email@example.com' target='_blank' rel="noopener noreferrer" className='underline'>your-email@example.com</a>
+                                <a href='mailto:saif.rahman.va@gmail.com' target='_blank' rel="noopener noreferrer" className='underline'>saif.rahman.va@gmail.com</a>
                             </div>
                             <div>
                                 <p>Or find me here</p>
                                 <div className='flex justify-center md:justify-start space-x-2'>
-                                    <a href='https://github.com/jtcaovan' target='_blank' rel="noopener noreferrer">
+                                    <a href='https://github.com/myfishdrowned' target='_blank' rel="noopener noreferrer">
                                         <img className='h-5 w-5 hover:scale-125 active:scale-95 transition duration-150' alt='github' src={github}/>
                                     </a>
-                                    <a href='https://www.linkedin.com/in/justincaovan/' target='_blank' rel="noopener noreferrer">
+                                    <a href='https://www.linkedin.com/in/srm19/' target='_blank' rel="noopener noreferrer">
                                         <img className='h-5 w-5 hover:scale-125 active:scale-95 transition duration-150' alt='linkedin' src={linkedIn}/>
                                     </a>
                                 </div>

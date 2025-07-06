@@ -47,8 +47,8 @@ const Portfolio = () => {
                             <ProjectCard 
                                 name = {'devfinder'}
                                 tags = { ['TypeScript', 'React', 'SASS', 'GitHubAPI']}
-                                github = {'https://github.com/jtcaovan/github-user-search'}
-                                liveDemo = {'https://github.com/jtcaovan/github-user-search'}
+                                github = {'https://github.com/myfishdrowned'}
+                                liveDemo = {'https://github.com/myfishdrowned'}
                                 alt = {'Image of devfinder'}
                                 description = { 'Coming Soon...' }
                             /> 
@@ -59,7 +59,7 @@ const Portfolio = () => {
                             name= {'Bloom'}
                             tags = { ['JavaScript', 'React', 'Redux', 'TailwindCSS'] }
                             liveDemo = { 'https://bloom-shopping-cart.herokuapp.com/' }
-                            github = { 'https://github.com/jtcaovan/shopping-cart' }
+                            github = { 'https://github.com/myfishdrowned' }
                             alt = {'Screenshot of Bloom, an indoor plant e-commerce web application'}
                             description = {'An indoor plant e-commerce frontend web application with a fully functioning shopping cart, product detail pages, and clean landing page. Users can add, modify, and remove items from their cart as well as filter products by category. Utilized React Router for seamless navigation throughout the site.'}
                         />
@@ -69,7 +69,7 @@ const Portfolio = () => {
                         <ProjectCard 
                             name = {'Breezy'}
                             tags = { ['JavaScript', 'React', 'TailwindCSS', 'OpenWeatherAPI']}
-                            github = {'https://github.com/jtcaovan/WeatherApp'}
+                            github = {'https://github.com/myfishdrowned'}
                             liveDemo = {'https://jtcaovan.github.io/WeatherApp/'}
                             alt = {'Screenshot of Breezy, a weather application.'}
                             description = { 'A widget-style weather application that displays the current weather, forecast, and details of over 200,000 cities in the world. Weather data is fetched using OpenWeather API. So simple and easy to use, it\'s Breezy.'}
@@ -80,7 +80,7 @@ const Portfolio = () => {
                         <ProjectCard 
                             name = {'The Odin Project'}
                             tags = { ['Open Source Contributor']}
-                            github = {'https://github.com/TheOdinProject/curriculum'}
+                            github = {'https://github.com/myfishdrowned'}
                             liveDemo = {'https://www.theodinproject.com/'}
                             alt = {'Image of The Odin Project, a free, open-source coding curriculum'}
                             description = { 'The Odin Project is a free, open-source, full stack coding curriculum. I contributed to the curriculum, updating the content for future students.' }

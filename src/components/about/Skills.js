@@ -48,8 +48,7 @@ function Skills() {
                     Skills
                 </motion.h1>
                 <motion.p initial='hidden' animate={animation} variants={header} className='font-body lg:text-lg leading-loose lg:leading-loose lg:w-3/4'>
-                        Experienced in building modern web applications and reusable user interface components using React.js, Javascript (ES6), TypeScript, HTML5, SASS/SCSS, CSS3.
-                        Currently learning Node.js, Express.js, and MongoDB to connect backend functionality to future applications.
+                        Experienced Identity and Access Management (IAM) professional with expertise in SailPoint IdentityIQ and IdentityNow solutions. Skilled in implementing provisioning workflows, role-based access control, and identity governance across enterprise environments.
                 </motion.p>
             </div>
 
@@ -58,32 +57,36 @@ function Skills() {
                     initial='hidden'
                     animate={animation}
                     variants={header}>
-                    <motion.h2 variants={header} className='font-display text-lg'>Languages and Frameworks</motion.h2>
+                    <motion.h2 variants={header} className='font-display text-lg'>IAM Platforms</motion.h2>
                     <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
-                        <motion.li variants={icons} className='icon'>{html} HTML5</motion.li>
-                        <motion.li variants={icons} className='icon'>{css} CSS3</motion.li>
-                        <motion.li variants={icons} className='icon'>{javascript}JavaScript</motion.li>
-                        <motion.li variants={icons} className='icon'>{typescript}TypeScript</motion.li>
-                        <motion.li variants={icons} className='icon'>{react}React</motion.li>
-                        <motion.li variants={icons} className='icon'>{gatsby}Gatsby</motion.li>
-                        <motion.li variants={icons} className='icon'>{tailwind}Tailwind</motion.li>
-                        <motion.li variants={icons} className='icon'>{sass}Sass</motion.li>
+                        <motion.li variants={icons} className='icon'>SailPoint</motion.li>
+                        <motion.li variants={icons} className='icon'>IdentityNOW</motion.li>
+                        <motion.li variants={icons} className='icon'>Okta</motion.li>
+                        <motion.li variants={icons} className='icon'>Secret Server</motion.li>
+                        <motion.li variants={icons} className='icon'>ServiceNOW</motion.li>
+                        <motion.li variants={icons} className='icon'>Varonis</motion.li>
+                        <motion.li variants={icons} className='icon'>AWS</motion.li>
+                        <motion.li variants={icons} className='icon'>UiPath (RPA)</motion.li>
+                        <motion.li variants={icons} className='icon'>JIRA</motion.li>
+                        <motion.li variants={icons} className='icon'>Confluence</motion.li>
                     </motion.ul>
                 </motion.div>
                 <motion.div className='w-full lg:w-1/2'
                         initial='hidden'
                         animate={animation}
                         variants={header}>
-                    <motion.h2 variants={header} className='font-display text-lg'>Development Tools</motion.h2>
+                    <motion.h2 variants={header} className='font-display text-lg'>Development Skills</motion.h2>
                     <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
-                        <motion.li variants={icons} className='icon'>{redux}Redux</motion.li>
-                        <motion.li variants={icons} className='icon'>{webpack}Webpack</motion.li>
-                        <motion.li variants={icons} className='icon'>{framer}Framer</motion.li>
-                        <motion.li variants={icons} className='icon'>{heroku}Heroku</motion.li>
-                        <motion.li variants={icons} className='icon'>{netlify}Netlify</motion.li>
-                        <motion.li variants={icons} className='icon'>{npm}npm</motion.li>
-                        <motion.li variants={icons} className='icon'>{git}git</motion.li>
-                        <motion.li variants={icons} className='icon'>{figma}Figma</motion.li>
+                        <motion.li variants={icons} className='icon'>Java</motion.li>
+                        <motion.li variants={icons} className='icon'>C#</motion.li>
+                        <motion.li variants={icons} className='icon'>PowerShell</motion.li>
+                        <motion.li variants={icons} className='icon'>VBA Script</motion.li>
+                        <motion.li variants={icons} className='icon'>Shell Scripting</motion.li>
+                        <motion.li variants={icons} className='icon'>SQL</motion.li>
+                        <motion.li variants={icons} className='icon'>Active Directory</motion.li>
+                        <motion.li variants={icons} className='icon'>LDAP</motion.li>
+                        <motion.li variants={icons} className='icon'>RBAC</motion.li>
+                        <motion.li variants={icons} className='icon'>SSO</motion.li>
                     </motion.ul>
                 </motion.div>
             </div>
