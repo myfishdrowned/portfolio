@@ -50,15 +50,12 @@ function Bio() {
                 variants={list}>
                     <motion.p className='text-lg md:text-xl text-justify tracking-tight leading-relaxed md:leading-loose'
                         variants={list}>
-                        Experienced Identity and Access Management (IAM) professional with a strong background in the design, development, and deployment of SailPoint IdentityIQ and IdentityNow solutions across on-premises and cloud environments. Proven expertise in implementing and configuring key SailPoint modules, including Application Onboarding, Compliance, and Lifecycle Management (LCM).
+                        I'm an experienced Identity and Access Management (IAM) professional with a solid track record designing, developing, and deploying SailPoint IdentityIQ and IdentityNow solutions across both on-prem and cloud environments. I specialize in application onboarding, compliance, and lifecycle management, and have hands-on experience integrating SailPoint into client systems to streamline provisioning, deprovisioning, and access governance.
 
-                        Skilled in integrating and deploying SailPoint products in client environments, with hands-on experience developing provisioning rules to manage user account operations such as creation, deletion, enabling, and disabling. Adept at customizing and configuring provisioning and deprovisioning workflows across internal and external systems.
+                        <br />
+                        <br />
 
-                        Experienced in configuring data aggregation from applications such as Active Directory, LDAP, and Delimited Files. Proficient in maintaining and refreshing Identity Cubes to enforce roles and policies. Familiar with designing and executing Joiner-Mover-Leaver (JML) workflows to automate identity lifecycle processes.
-
-                        Strong knowledge of Role-Based Access Control (RBAC), entitlement management, and role mining. Proficient in Single Sign-On (SSO), identity provisioning, certification campaigns, and access governance. Skilled in writing complex SQL queries, stored procedures, and managing data imports/exports.
-
-                        Passionate about building secure, scalable identity infrastructures that support organizational compliance and user experience goals.
+                        From configuring workflows and provisioning rules to aggregating data from sources like Active Directory, LDAP, and flat files, I enjoy building secure, scalable identity solutions. I'm also well-versed in JML (Joiner-Mover-Leaver) processes, RBAC, entitlement management, and role mining. Whether it's writing complex SQL queries or leading certification campaigns, I'm passionate about using IAM to enhance security, support compliance, and improve the user experience.
 
                     </motion.p>
                     <motion.button className='bg-black bg-opacity-90 text-light-green h-full w-max mt-8 p-4
