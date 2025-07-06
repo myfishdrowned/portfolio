@@ -57,7 +57,7 @@ const Contact = () => {
                         <div className='flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between'>
                             <div className='flex flex-col'>
                                 <p>Contact me at</p>
-                                <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer" className='underline'>justincaovan@gmail.com</a>
+                                <a href='mailto:your-email@example.com' target='_blank' rel="noopener noreferrer" className='underline'>your-email@example.com</a>
                             </div>
                             <div>
                                 <p>Or find me here</p>
@@ -81,7 +81,7 @@ const Contact = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" onClick={()=>{navigate('#')}} className="h-6 w-6 text-light-green m-auto animate-bounce cursor-pointer transition duration-150 hover:text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
                     </svg>
-                    <p className='text-light-green font-display text-sm'>Designed and developed by Justin Caovan © 2021</p>
+                    <p className='text-light-green font-display text-sm'>Designed and developed by Saif-Ur Rahman © 2021</p>
                 </div>
             </motion.div>
         </div>

@@ -25,8 +25,8 @@ const IndexPage = () => {
       <div data-scroll-container ref={scrollRef} className='smooth-scroll bg-light-green overflow-hidden'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Justin Caovan | Front End Developer</title>
-          <meta name="description" content="Personal portfolio website for Justin Caovan with his bio, projects and contact information" />
+          <title>Saif-Ur Rahman | Front End Developer</title>
+          <meta name="description" content="Personal portfolio website for Saif-Ur Rahman with his bio, projects and contact information" />
           <link rel="canonical" href="https://www.justincaovan.com" />
           <html lang="en" />
         </Helmet>

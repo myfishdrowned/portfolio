@@ -65,7 +65,7 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                     className='text-6xl md:text-8xl 2xl:text-9xl'>
-                        JUSTIN CAOVAN
+                        SAIF-UR RAHMAN
                 </motion.h1>
                 <motion.div
                     variants={container}
@@ -116,7 +116,7 @@ const Hero = () => {
                         <motion.div 
                             variants={icon}
                             className='bg-red-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95'>
-                            <a href='mailto:justincaovan@gmail.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Gmail' src={gmail}/> </a>
+                            <a href='mailto:your-email@example.com' target='_blank' rel="noopener noreferrer"><img className='h-4 w-4 md:h-5 md:w-5' alt='Gmail' src={gmail}/> </a>
                         </motion.div>
                 </motion.div>
             </div>        

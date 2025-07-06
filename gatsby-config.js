@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.justincaovan.com",
-    title: "Justin Caovan | Front End Developer",
-    description: "Justin Caovan is a front end developer who loves creating seamless, intuitive, and beautiful digital experiences.",
-    author: "Justin Caovan",
+    title: "Saif-Ur Rahman | Front End Developer",
+    description: "Saif-Ur Rahman is a front end developer who loves creating seamless, intuitive, and beautiful digital experiences.",
+    author: "Saif-Ur Rahman",
     image: "src/images/home.png"
   },
   plugins: ["gatsby-plugin-gatsby-cloud",
@@ -22,7 +22,7 @@ module.exports = {
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Justin Caovan Portfolio`,
+      name: `Saif-Ur Rahman Portfolio`,
       short_name: `Portfolio`,
       start_url: `/`,
       icon: `src/images/favicon.png`,
