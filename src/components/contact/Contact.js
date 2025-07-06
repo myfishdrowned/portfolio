@@ -16,7 +16,7 @@ const Contact = () => {
         if (inView) {
             animation.start('visible')
         }
-    }, [inView])
+    }, [inView, animation])
     
     const list = {
         visible: {

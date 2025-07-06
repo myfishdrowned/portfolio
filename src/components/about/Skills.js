@@ -13,7 +13,7 @@ function Skills() {
         if (inView) {
             animation.start('visible')
         }
-    }, [inView])
+    }, [inView, animation])
 
     const header = {
         visible: {
