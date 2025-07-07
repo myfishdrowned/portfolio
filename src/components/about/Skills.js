@@ -1,0 +1,100 @@
+import React, {useEffect} from 'react'
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from 'react-intersection-observer'
+
+function Skills() {
+    const animation = useAnimation()
+    const {ref, inView} = useInView({
+        threshold: 0.5
+    })
+
+    useEffect(() => {
+        if (inView) {
+            animation.start('visible')
+        }
+    }, [inView, animation])
+
+    const header = {
+        visible: {
+            y: 0, opacity: 1,
+            transition: {
+                staggerChildren: .1,
+                delayChildren: .1, 
+                duration: 1,
+            }
+        },
+        hidden: {
+            y: '5vw', opacity: 0
+        }
+    }
+
+    const icons = {
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 1
+            }
+        },
+        hidden: {
+            opacity: 0
+        }
+    }
+
+    return(
+        <div ref={ref} data-scroll-section className='flex flex-col max-w-6xl space-y-12 lg:space-y-24  w-3/4 py-12 lg:py-24 m-auto my-0 lg:m-auto lg:my-4'>
+            <div className='flex flex-col lg:flex-row lg:justify-between space-y-6 lg:space-y-0 w-full text-center lg:text-left m-auto'>
+                <motion.h1 initial='hidden' animate={animation} variants={header} className='font-display text-4xl lg:w-1/4'>
+                    Skills
+                </motion.h1>
+                <motion.p initial='hidden' animate={animation} variants={header} className='font-body lg:text-lg leading-loose lg:leading-loose lg:w-3/4'>
+                    Technical expertise in Identity and Access Management platforms, development languages, and enterprise security tools.
+                </motion.p>
+            </div>
+
+            <div className='flex flex-col w-full text-center space-y-24 lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 lg:divide-x divide-opacity-30 divide-graphite text-center justify-between'>
+                <motion.div className='w-full lg:w-1/2'           
+                    initial='hidden'
+                    animate={animation}
+                    variants={header}>
+                    <motion.h2 variants={header} className='font-display text-lg'>IAM Platforms</motion.h2>
+                    <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>SailPoint</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>IdentityNOW</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>IdentityIQ</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Okta</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Secret Server</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>ServiceNOW</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Varonis</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>AWS</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>UiPath (RPA)</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>JIRA</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Confluence</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Active Directory</motion.li>
+                    </motion.ul>
+                </motion.div>
+                <motion.div className='w-full lg:w-1/2'
+                        initial='hidden'
+                        animate={animation}
+                        variants={header}>
+                    <motion.h2 variants={header} className='font-display text-lg'>Development & Tools</motion.h2>
+                    <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Java</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>C#</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>PowerShell</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>VBA Script</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Shell Scripting</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>SQL</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Beanshell</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>LDAP</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>RBAC</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>SSO</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>JML Processes</motion.li>
+                        <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Workflow Design</motion.li>
+                    </motion.ul>
+                </motion.div>
+            </div>
+        </div>
+    )
+}
+
+export default Skills 
