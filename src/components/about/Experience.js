@@ -2,6 +2,59 @@ import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
 
+// Helper to calculate duration string
+function getDurationString(start, end) {
+    const startDate = new Date(start);
+    const endDate = end ? new Date(end) : new Date();
+    let years = endDate.getFullYear() - startDate.getFullYear();
+    let months = endDate.getMonth() - startDate.getMonth();
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+    let result = '';
+    if (years > 0) result += `${years} yr${years > 1 ? 's' : ''} `;
+    result += `${months} mo${months !== 1 ? 's' : ''}`;
+    return result.trim();
+}
+
+const experienceData = [
+    {
+        title: 'IAM Engineer',
+        company: 'Fiserv',
+        type: 'Full-time',
+        start: '2024-01-01',
+        end: null, // Present
+        location: 'Berkeley Heights, NJ',
+        mode: 'Hybrid',
+        platforms: 'SailPoint, IdentityNOW, Okta, Secret Server, ServiceNOW, Varonis, AWS, UiPath (RPA), JIRA, Confluence, Java, C#, PS Script, VBA Script, Shell scripting, SQL',
+        responsibilities: [
+            'Gathered requirements from the application team and performed design analysis to integrate IdentityIQ. Lead App onboarding meetings with business owners to integrate new applications into SailPoint for governance and provisioning access.',
+            'Developed custom workflows with approvals and modified OOTB workflows as per client requirements.',
+            'Involved in various patch upgrades including version upgrades.',
+            'Involved in designing, requirement gathering, talking to the business team, development and deployment of SailPoint IIQ',
+            'Responsible for Developing and applying storage strategies and disaster-recovery plan for a large operational database that guaranteed recovery performance and high availability',
+            'Developed rules in Beanshell – Application rules, identity trigger rules, aggregation rules, connector rules, certification rules, and policy rules.'
+        ]
+    },
+    {
+        title: 'SailPoint Developer',
+        company: 'The Home Depot',
+        type: 'Contract',
+        start: '2022-11-01',
+        end: '2023-12-31',
+        location: 'Atlanta, Georgia, United States',
+        mode: 'Hybrid',
+        responsibilities: [
+            'Led the design, implementation, and development of SailPoint IdentityIQ, serving as the IAM/IDM technical expert for the Operations team.',
+            'Implemented Access Certification, automated provisioning workflows, and governance controls in IIQ.',
+            'Built and optimized Lifecycle Manager workflows, lifecycle and certification events, custom email templates, and task definitions.',
+            'Integrated key connectors (Active Directory, PeopleSoft, Salesforce, ServiceNow) and enhanced AD attribute management.',
+            'Automated cloud-application account creation and updates, maximizing self-service and password-management features in SailPoint.'
+        ]
+    }
+];
+
 function Experience() {
     const animation = useAnimation()
     const {ref, inView} = useInView({
@@ -54,69 +107,39 @@ function Experience() {
             </div>
 
             <div className='flex flex-col w-full space-y-16'>
-                {/* Fiserv Experience */}
-                <motion.div className='w-full'           
-                    initial='hidden'
-                    animate={animation}
-                    variants={header}>
-                    <motion.div variants={item} className='flex flex-col lg:flex-row lg:justify-between items-start lg:items-center mb-6'>
-                        <div>
-                            <h2 className='font-display text-2xl text-light-green'>IAM Engineer</h2>
-                            <p className='font-body text-lg'>Fiserv · Full-time</p>
-                        </div>
-                        <div className='text-right mt-2 lg:mt-0'>
-                            <p className='font-body text-sm'>Jan 2024 - Present · 1 yr 7 mos</p>
-                            <p className='font-body text-sm'>Berkeley Heights, NJ · Hybrid</p>
-                        </div>
+                {experienceData.map((exp, idx) => (
+                    <motion.div className='w-full' key={idx}
+                        initial='hidden'
+                        animate={animation}
+                        variants={header}>
+                        <motion.div variants={item} className='flex flex-col lg:flex-row lg:justify-between items-start lg:items-center mb-6'>
+                            <div>
+                                <h2 className='font-display text-2xl text-light-green'>{exp.title}</h2>
+                                <p className='font-body text-lg'>{exp.company} · {exp.type}</p>
+                            </div>
+                            <div className='text-right mt-2 lg:mt-0'>
+                                <p className='font-body text-sm'>
+                                    {new Date(exp.start).toLocaleString('default', { month: 'short', year: 'numeric' })} - {exp.end ? new Date(exp.end).toLocaleString('default', { month: 'short', year: 'numeric' }) : 'Present'} · {getDurationString(exp.start, exp.end)}
+                                </p>
+                                <p className='font-body text-sm'>{exp.location}{exp.mode ? ` · ${exp.mode}` : ''}</p>
+                            </div>
+                        </motion.div>
+                        {exp.platforms && (
+                            <motion.div variants={item} className='mb-6'>
+                                <h3 className='font-display text-lg mb-2'>Platforms & Skills:</h3>
+                                <p className='font-body text-sm leading-relaxed'>
+                                    {exp.platforms}
+                                </p>
+                            </motion.div>
+                        )}
+                        <motion.div variants={item}>
+                            <h3 className='font-display text-lg mb-3'>Key Responsibilities:</h3>
+                            <ul className='font-body text-sm space-y-2 leading-relaxed'>
+                                {exp.responsibilities.map((r, i) => <li key={i}>• {r}</li>)}
+                            </ul>
+                        </motion.div>
                     </motion.div>
-                    
-                    <motion.div variants={item} className='mb-6'>
-                        <h3 className='font-display text-lg mb-2'>Platforms & Skills:</h3>
-                        <p className='font-body text-sm leading-relaxed'>
-                            SailPoint, IdentityNOW, Okta, Secret Server, ServiceNOW, Varonis, AWS, UiPath (RPA), JIRA, Confluence, Java, C#, PS Script, VBA Script, Shell scripting, SQL
-                        </p>
-                    </motion.div>
-
-                    <motion.div variants={item}>
-                        <h3 className='font-display text-lg mb-3'>Key Responsibilities:</h3>
-                        <ul className='font-body text-sm space-y-2 leading-relaxed'>
-                            <li>• Gathered requirements from the application team and performed design analysis to integrate IdentityIQ. Lead App onboarding meetings with business owners to integrate new applications into SailPoint for governance and provisioning access.</li>
-                            <li>• Developed custom workflows with approvals and modified OOTB workflows as per client requirements.</li>
-                            <li>• Involved in various patch upgrades including version upgrades.</li>
-                            <li>• Involved in designing, requirement gathering, talking to the business team, development and deployment of SailPoint IIQ</li>
-                            <li>• Responsible for Developing and applying storage strategies and disaster-recovery plan for a large operational database that guaranteed recovery performance and high availability</li>
-                            <li>• Developed rules in Beanshell – Application rules, identity trigger rules, aggregation rules, connector rules, certification rules, and policy rules.</li>
-                        </ul>
-                    </motion.div>
-                </motion.div>
-
-                {/* The Home Depot Experience */}
-                <motion.div className='w-full'           
-                    initial='hidden'
-                    animate={animation}
-                    variants={header}>
-                    <motion.div variants={item} className='flex flex-col lg:flex-row lg:justify-between items-start lg:items-center mb-6'>
-                        <div>
-                            <h2 className='font-display text-2xl text-light-green'>SailPoint Developer</h2>
-                            <p className='font-body text-lg'>The Home Depot · Contract</p>
-                        </div>
-                        <div className='text-right mt-2 lg:mt-0'>
-                            <p className='font-body text-sm'>Nov 2022 - Dec 2023 · 1 yr 2 mos</p>
-                            <p className='font-body text-sm'>Atlanta, Georgia, United States · Hybrid</p>
-                        </div>
-                    </motion.div>
-
-                    <motion.div variants={item}>
-                        <h3 className='font-display text-lg mb-3'>Key Responsibilities:</h3>
-                        <ul className='font-body text-sm space-y-2 leading-relaxed'>
-                            <li>• Led the design, implementation, and development of SailPoint IdentityIQ, serving as the IAM/IDM technical expert for the Operations team.</li>
-                            <li>• Implemented Access Certification, automated provisioning workflows, and governance controls in IIQ.</li>
-                            <li>• Built and optimized Lifecycle Manager workflows, lifecycle and certification events, custom email templates, and task definitions.</li>
-                            <li>• Integrated key connectors (Active Directory, PeopleSoft, Salesforce, ServiceNow) and enhanced AD attribute management.</li>
-                            <li>• Automated cloud-application account creation and updates, maximizing self-service and password-management features in SailPoint.</li>
-                        </ul>
-                    </motion.div>
-                </motion.div>
+                ))}
             </div>
         </div>
     )
