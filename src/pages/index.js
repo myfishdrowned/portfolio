@@ -27,7 +27,7 @@ const IndexPage = () => {
           <meta charSet="utf-8" />
           <title>Saif-Ur Rahman | IAM Engineer</title>
           <meta name="description" content="Personal portfolio website for Saif-Ur Rahman with his bio, projects and contact information" />
-          <link rel="canonical" href="https://www.justincaovan.com" />
+          <link rel="canonical" href="https://saif-ur-rahman.com" />
           <html lang="en" />
         </Helmet>
           <Hero />

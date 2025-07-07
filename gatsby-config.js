@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.justincaovan.com",
-    title: "Saif-Ur Rahman | Front End Developer",
-    description: "Saif-Ur Rahman is a front end developer who loves creating seamless, intuitive, and beautiful digital experiences.",
+    siteUrl: "https://saif-ur-rahman.com",
+    title: "Saif-Ur Rahman | IAM Engineer",
+    description: "Saif-Ur Rahman is an IAM Engineer who specializes in SailPoint IdentityIQ and IdentityNow solutions, creating secure and scalable identity infrastructures.",
     author: "Saif-Ur Rahman",
     image: "src/images/home.png"
   },
