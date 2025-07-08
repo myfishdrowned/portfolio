@@ -123,7 +123,7 @@ function Skills() {
                                 <span>PowerShell</span>
                             </motion.li>
                             <motion.li variants={icons} className='flex flex-col items-center'>
-                                <img src="/postman.png" alt="Postman" className="skill-icon mb-2" />
+                                <img src="/Postman.png" alt="Postman" className="skill-icon mb-2" />
                                 <span>Postman</span>
                             </motion.li>
                             <motion.li variants={icons} className='flex flex-col items-center'>
