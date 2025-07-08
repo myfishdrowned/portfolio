@@ -86,11 +86,26 @@ function Skills() {
                                 <img src="/okta.png" alt="Okta" className="skill-icon mb-2" />
                                 <span>Okta</span>
                             </motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Secret Server</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>ServiceNOW</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>AWS</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>JIRA</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Active Directory</motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/secretserver.png" alt="Secret Server" className="skill-icon mb-2" style={{width: '56px', height: '56px'}} />
+                                <span>Secret Server</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/servicenow.png" alt="ServiceNOW" className="skill-icon mb-2" />
+                                <span>ServiceNOW</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/aws.png" alt="AWS" className="skill-icon mb-2" />
+                                <span>AWS</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/jira.png" alt="JIRA" className="skill-icon mb-2" />
+                                <span>JIRA</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/activedirectory.png" alt="Active Directory" className="skill-icon mb-2" />
+                                <span>Active Directory</span>
+                            </motion.li>
                         </motion.ul>
                     </motion.div>
                     <motion.div className='w-full lg:w-1/2'
@@ -99,10 +114,16 @@ function Skills() {
                             variants={header}>
                         <motion.h2 variants={header} className='font-display text-lg'>Development & Tools</motion.h2>
                         <motion.ul variants={header} className='grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14'>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Java</motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/java.png" alt="Java" className="skill-icon mb-2" />
+                                <span>Java</span>
+                            </motion.li>
                             <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>PowerShell</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Shell Scripting</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>SQL</motion.li>
+                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Postman</motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/sql.png" alt="SQL" className="skill-icon mb-2" />
+                                <span>SQL</span>
+                            </motion.li>
                             <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Beanshell</motion.li>
                             <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>LDAP</motion.li>
                             <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>RBAC</motion.li>
