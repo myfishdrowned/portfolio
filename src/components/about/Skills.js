@@ -118,16 +118,34 @@ function Skills() {
                                 <img src="/java.png" alt="Java" className="skill-icon mb-2" />
                                 <span>Java</span>
                             </motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>PowerShell</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Postman</motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/powershell.png" alt="PowerShell" className="skill-icon mb-2" />
+                                <span>PowerShell</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/postman.png" alt="Postman" className="skill-icon mb-2" />
+                                <span>Postman</span>
+                            </motion.li>
                             <motion.li variants={icons} className='flex flex-col items-center'>
                                 <img src="/sql.png" alt="SQL" className="skill-icon mb-2" />
                                 <span>SQL</span>
                             </motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>Beanshell</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>LDAP</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>RBAC</motion.li>
-                            <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>SSO</motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/beanshell.png" alt="Beanshell" className="skill-icon mb-2" />
+                                <span>Beanshell</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/ldap.png" alt="LDAP" className="skill-icon mb-2" />
+                                <span>LDAP</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/rbac.png" alt="RBAC" className="skill-icon mb-2" />
+                                <span>RBAC</span>
+                            </motion.li>
+                            <motion.li variants={icons} className='flex flex-col items-center'>
+                                <img src="/sso.png" alt="SSO" className="skill-icon mb-2" />
+                                <span>SSO</span>
+                            </motion.li>
                             <motion.li variants={icons} className='px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default transition transform duration-400 ease-in-out hover:scale-110'>JML Processes</motion.li>
                         </motion.ul>
                     </motion.div>
