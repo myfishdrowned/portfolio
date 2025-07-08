@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/8357194b-5918-4f81-87e2-703179407f69/java.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250708%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20250708T175242Z&X-Amz-Expires=86400&X-Amz-Signature=6be9c0795314e85f5f1fd2735f73ebf6d05f325fa4a5f30d2f4898af00349b9d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22java.png%22&response-content-type=image%2Fpng&x-id=GetObject
