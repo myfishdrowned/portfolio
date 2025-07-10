@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
+import postmanIcon from '../../images/postman.png';
 
 // Add this style block for the skill-icon class
 const style = `
@@ -123,7 +124,7 @@ function Skills() {
                                 <span>PowerShell</span>
                             </motion.li>
                             <motion.li variants={icons} className='flex flex-col items-center'>
-                                <img src="/postman.png" alt="Postman" className="skill-icon mb-2" />
+                                <img src={postmanIcon} alt="Postman" className="skill-icon mb-2" />
                                 <span>Postman</span>
                             </motion.li>
                             <motion.li variants={icons} className='flex flex-col items-center'>
