@@ -17,7 +17,10 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || 'http://localhost:8000',
+  origin: [
+    'http://localhost:8000', // for local dev
+    'https://rahman-s.netlify.app' // your Netlify site, no trailing slash
+  ],
   credentials: true,
   optionsSuccessStatus: 200
 };

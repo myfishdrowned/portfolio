@@ -7,7 +7,7 @@ function ContactForm() {
     const [error, setError] = useState('');
     
     const API_URL = process.env.NODE_ENV === 'production' 
-        ? 'https://your-backend-url.com/api/contact'  // Replace with your actual backend URL
+        ? 'https://portfolio-backend-gray-delta.vercel.app/api/contact'
         : 'http://localhost:5000/api/contact';
     
     async function sendEmail(e) {
