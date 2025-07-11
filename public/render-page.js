@@ -17040,8 +17040,7 @@ function ContactForm() {
     0: error,
     1: setError
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
-  const API_URL =  false ? 0 // Replace with your actual backend URL
-  : 'http://localhost:5000/api/contact';
+  const API_URL =  false ? 0 : 'http://localhost:5000/api/contact';
 
   async function sendEmail(e) {
     e.preventDefault();
@@ -17293,7 +17292,7 @@ const Hero = () => {
     initial: "hidden",
     animate: "visible",
     className: "text-6xl md:text-8xl 2xl:text-9xl"
-  }, "SAIF-UR RAHMAN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_7__.motion.div, {
+  }, "abeeda rahman"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_7__.motion.div, {
     variants: container,
     initial: {
       x: '-50vw',
