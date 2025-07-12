@@ -65,7 +65,7 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                     className='text-6xl md:text-8xl 2xl:text-9xl'>
-                        abeeda rahman
+                        SAIF-UR RAHMAN
                 </motion.h1>
                 <motion.div
                     variants={container}
